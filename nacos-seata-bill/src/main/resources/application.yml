@@ -1,0 +1,48 @@
+# 1.0新添加的enabled激活自动配置，使得我们可以在yaml/properties文件中配置，
+# 避免了以前需要客户端引入2个文件：
+# file.conf 和 registry.conf
+seata:
+  enabled: true     # 1.0新特性，需要依赖seata-spring-boot-starter,默认为true
+  tx-service-group: bdqn_tx_group
+  registry:
+    type: nacos
+    nacos:
+      server-addr: http://127.0.0.1:8848
+  client:
+    support:
+      spring:
+        datasource-autoproxy: false
+  service:
+    disable-global-transaction: false   #bug
+
+server:
+  port: 8111
+
+spring:
+  application:
+    name: nacos-seata-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  #数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///bill?serverTimezone=GMT
+    username: root
+    password: root
+
+mybatis:
+  type-aliases-package: com.nacos.pojo
+  mapper-locations: classpath:com/nacos/mapper/xml/*.xml
+  configuration:
+    auto-mapping-behavior: full
+    use-generated-keys: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

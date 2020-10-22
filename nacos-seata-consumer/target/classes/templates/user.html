@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>超市订单管理系统</title>
+	<link rel="icon" th:href="@{/img/buy.png}" type="image/x-icon"/>
+    <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}" />
+    <link type="text/css" rel="stylesheet" th:href="@{/css/public.css}" />
+</head>
+<body>
+<!--头部-->
+    <header class="publicHeader">
+        <h1>超市订单管理系统</h1>
+        <div class="publicHeaderR">
+            <p><span>下午好！</span><span style="color: #fff21b"> 系统管理员</span> , 欢迎你！</p>
+			<a href="/logout">退出</a>
+        </div>
+    </header>
+<!--时间-->
+    <section class="publicTime">
+        <span id="time">2015年1月1日 11:11  星期一</span>
+        <a href="#">温馨提示：为了能正常浏览，请使用高版本浏览器！（IE10+）</a>
+    </section>
+ <!--主体内容-->
+ <section class="publicMian ">
+     <div class="left">
+         <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
+         <nav>
+             <ul class="list">
+              <li><a href="/bill.html">订单管理</a></li>
+              <li><a href="/provider.html">供应商管理</a></li>
+              <li><a href="/user.html">用户管理</a></li>
+			  <li><a href="/pwdmodify.html">密码修改</a></li>
+              <li><a href="/logout">退出系统</a></li>
+             </ul>
+         </nav>
+     </div>
+     <input type="hidden" id="path" name="path" value="/SMBMS"/>
+     <input type="hidden" id="referer" name="referer" value="http://www.startym.top/SMBMS/jsp/provideradd.jsp"/>
+        <div class="right">
+            <div class="location">
+                <strong>你现在所在的位置是:</strong>
+                <span>用户管理页面</span>
+            </div>
+            <div class="search">
+           		<form method="get" action="/SMBMS/jsp/user.do">
+					<input name="method" value="query" class="input-text" type="hidden">
+					 <span>用户名：</span>
+					 <input name="queryname" class="input-text"	type="text" value="">
+					 
+					 <span>用户角色：</span>
+					 <select name="queryUserRole">
+						
+						   <option value="0">--请选择--</option>
+						   
+						   		<option 
+						   		value="1">系统管理员</option>
+						   
+						   		<option 
+						   		value="2">经理</option>
+						   
+						   		<option 
+						   		value="3">普通员工</option>
+						   
+						
+	        		</select>
+					 
+					 <input type="hidden" name="pageIndex" value="1"/>
+					 <input	value="查 询" type="submit" id="searchbutton">
+					 <a href="/useradd.html" >添加用户</a>
+				</form>
+            </div>
+            <!--用户-->
+            <table class="providerTable" cellpadding="0" cellspacing="0">
+                <tr class="firstTr">
+                    <th width="10%">用户编码</th>
+                    <th width="20%">用户名称</th>
+                    <th width="10%">性别</th>
+                    <th width="10%">年龄</th>
+                    <th width="10%">电话</th>
+                    <th width="10%">用户角色</th>
+                    <th width="30%">操作</th>
+                </tr>
+                   
+					<tr>
+						<td>
+						<span>ww</span>
+						</td>
+						<td>
+						<span>王涵</span>
+						</td>
+						<td>
+							<span>
+								男
+								
+							</span>
+						</td>
+						<td>
+						<span>7</span>
+						</td>
+						<td>
+						<span>13568749874</span>
+						</td>
+						<td>
+							<span>经理</span>
+						</td>
+						<td>
+						<span><a class="viewUser" href="javascript:;" userid=16 username=王涵><img th:src="@{/img/read.png}" alt="查看" title="查看"/></a></span>
+						<span><a class="modifyUser" href="javascript:;" userid=16 username=王涵><img th:src="@{/img/xiugai.png}" alt="修改" title="修改"/></a></span>
+						<span><a class="deleteUser" href="javascript:;" userid=16 username=王涵><img th:src="@{/img/schu.png}" alt="删除" title="删除"/></a></span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						<span>sunxing</span>
+						</td>
+						<td>
+						<span>孙兴</span>
+						</td>
+						<td>
+							<span>
+								男
+								
+							</span>
+						</td>
+						<td>
+						<span>42</span>
+						</td>
+						<td>
+						<span>13367890900</span>
+						</td>
+						<td>
+							<span>普通员工</span>
+						</td>
+						<td>
+						<span><a class="viewUser" href="javascript:;" userid=11 username=孙兴><img th:src="@{/img/read.png}" alt="查看" title="查看"/></a></span>
+						<span><a class="modifyUser" href="javascript:;" userid=11 username=孙兴><img th:src="@{/img/xiugai.png}" alt="修改" title="修改"/></a></span>
+						<span><a class="deleteUser" href="javascript:;" userid=11 username=孙兴><img th:src="@{/img/schu.png}" alt="删除" title="删除"/></a></span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						<span>zhangchen</span>
+						</td>
+						<td>
+						<span>张晨</span>
+						</td>
+						<td>
+							<span>
+								男
+								
+							</span>
+						</td>
+						<td>
+						<span>34</span>
+						</td>
+						<td>
+						<span>18098765434</span>
+						</td>
+						<td>
+							<span>普通员工</span>
+						</td>
+						<td>
+						<span><a class="viewUser" href="javascript:;" userid=12 username=张晨><img th:src="@{/img/read.png}" alt="查看" title="查看"/></a></span>
+						<span><a class="modifyUser" href="javascript:;" userid=12 username=张晨><img th:src="@{/img/xiugai.png}" alt="修改" title="修改"/></a></span>
+						<span><a class="deleteUser" href="javascript:;" userid=12 username=张晨><img th:src="@{/img/schu.png}" alt="删除" title="删除"/></a></span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						<span>zhaoyan</span>
+						</td>
+						<td>
+						<span>赵燕</span>
+						</td>
+						<td>
+							<span>
+								男
+								
+							</span>
+						</td>
+						<td>
+						<span>34</span>
+						</td>
+						<td>
+						<span>18098764545</span>
+						</td>
+						<td>
+							<span>普通员工</span>
+						</td>
+						<td>
+						<span><a class="viewUser" href="javascript:;" userid=8 username=赵燕><img th:src="@{/img/read.png}" alt="查看" title="查看"/></a></span>
+						<span><a class="modifyUser" href="javascript:;" userid=8 username=赵燕><img th:src="@{/img/xiugai.png}" alt="修改" title="修改"/></a></span>
+						<span><a class="deleteUser" href="javascript:;" userid=8 username=赵燕><img th:src="@{/img/schu.png}" alt="删除" title="删除"/></a></span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						<span>zhaomin</span>
+						</td>
+						<td>
+						<span>赵敏</span>
+						</td>
+						<td>
+							<span>
+								男
+								
+							</span>
+						</td>
+						<td>
+						<span>33</span>
+						</td>
+						<td>
+						<span>18099897657</span>
+						</td>
+						<td>
+							<span>经理</span>
+						</td>
+						<td>
+						<span><a class="viewUser" href="javascript:;" userid=15 username=赵敏><img th:src="@{/img/read.png}" alt="查看" title="查看"/></a></span>
+						<span><a class="modifyUser" href="javascript:;" userid=15 username=赵敏><img th:src="@{/img/xiugai.png}" alt="修改" title="修改"/></a></span>
+						<span><a class="deleteUser" href="javascript:;" userid=15 username=赵敏><img th:src="@{/img/schu.png}" alt="删除" title="删除"/></a></span>
+						</td>
+					</tr>
+				
+			</table>
+			<input type="hidden" id="totalPageCount" value="3"/>
+		  	
+	          	
+	          	
+	          	
+          	
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body>
+ 		<div class="page-bar">
+			<ul class="page-num-ul clearfix">
+				<li>共11条记录&nbsp;&nbsp; 1/3页</li>
+				
+				
+					<a href="javascript:page_nav(document.forms[0],2);">下一页</a>
+					<a href="javascript:page_nav(document.forms[0],3);">最后一页</a>
+				
+				&nbsp;&nbsp;
+			</ul>
+		 <span class="page-go-form"><label>跳转至</label>
+	     <input type="text" name="inputPage" id="inputPage" class="page-key" />页
+	     <button type="button" class="page-btn" onClick='jump_to(document.forms[0],document.getElementById("inputPage").value)'>GO</button>
+		</span>
+		</div> 
+</body>
+<script type="text/javascript" th:href="@{/js/rollpage.js}"></script>
+</html>
+        </div>
+    </section>
+
+<!--点击删除按钮后弹出的页面-->
+<div class="zhezhao"></div>
+<div class="remove" id="removeUse">
+    <div class="removerChid">
+        <h2>提示</h2>
+        <div class="removeMain">
+            <p>你确定要删除该用户吗？</p>
+            <a href="#" id="yes">确定</a>
+            <a href="#" id="no">取消</a>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="footer">
+    版权归北大青鸟
+</footer>
+<script type="text/javascript" th:src="@{/js/time.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery-3.5.1.js}"></script>
+<script type="text/javascript" th:src="@{/js/common.js}"></script>
+<script type="text/javascript" th:src="@{/calendar/WdatePicker.js}"></script>
+<script type="text/javascript" th:src="@{/js/userlist.js}"></script>
+</body>
+</html>

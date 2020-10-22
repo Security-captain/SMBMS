@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="seata-saga-rm" />
+        <module name="seata-saga-statelang" />
+        <module name="seata-sqlparser-core" />
+        <module name="seata-config-all" />
+        <module name="nacos-seata-bill" />
+        <module name="seata-discovery-core" />
+        <module name="motan" />
+        <module name="nacos-model" />
+        <module name="seata-metrics-all" />
+        <module name="seata-discovery-sofa" />
+        <module name="seata-discovery-zk" />
+        <module name="spring" />
+        <module name="seata-discovery-consul" />
+        <module name="seata-discovery-etcd3" />
+        <module name="seata-saga-processctrl" />
+        <module name="nacos-gateway" />
+        <module name="seata-compressor-lz4" />
+        <module name="seata-discovery-redis" />
+        <module name="seata-discovery-all" />
+        <module name="nacos-seata-provider" />
+        <module name="all" />
+        <module name="seata-spring-boot-starter" />
+        <module name="seata-metrics-registry-compact" />
+        <module name="seata-metrics-core" />
+        <module name="test" />
+        <module name="seata-config-consul" />
+        <module name="nacos-seata-consumer" />
+        <module name="grpc" />
+        <module name="core" />
+        <module name="rm-datasource" />
+        <module name="seata-compressor-7z" />
+        <module name="seata-compressor-bzip2" />
+        <module name="http" />
+        <module name="rm" />
+        <module name="server" />
+        <module name="seata-discovery-eureka" />
+        <module name="seata-saga-tm" />
+        <module name="seata-config-etcd3" />
+        <module name="seata-config-apollo" />
+        <module name="seata-serializer-fst" />
+        <module name="dubbo" />
+        <module name="nacos-seata-user" />
+        <module name="dubbo-alibaba" />
+        <module name="seata-saga-engine-store" />
+        <module name="seata-discovery-nacos" />
+        <module name="seata-serializer-seata" />
+        <module name="common" />
+        <module name="tcc" />
+        <module name="seata-serializer-kryo" />
+        <module name="seata-config-nacos" />
+        <module name="seata-config-zk" />
+        <module name="seata-config-core" />
+        <module name="sofa-rpc" />
+        <module name="seata-compressor-all" />
+        <module name="seata-compressor-zip" />
+        <module name="seata-config-spring-cloud" />
+        <module name="seata-serializer-protobuf" />
+        <module name="seata-discovery-custom" />
+        <module name="seata-config-custom" />
+        <module name="seata-serializer-hessian" />
+        <module name="seata-serializer-all" />
+        <module name="seata-saga-engine" />
+        <module name="seata-compressor-gzip" />
+        <module name="seata-metrics-exporter-prometheus" />
+        <module name="seata-metrics-api" />
+        <module name="seata-sqlparser-druid" />
+        <module name="tm" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="all" target="14" />
+      <module name="bom" target="14" />
+      <module name="common" target="14" />
+      <module name="compressor" target="14" />
+      <module name="config" target="14" />
+      <module name="core" target="14" />
+      <module name="discovery" target="14" />
+      <module name="distribution" target="14" />
+      <module name="dubbo" target="14" />
+      <module name="dubbo-alibaba" target="14" />
+      <module name="grpc" target="14" />
+      <module name="http" target="14" />
+      <module name="metrics" target="14" />
+      <module name="motan" target="14" />
+      <module name="nacos-gateway" target="14" />
+      <module name="nacos-model" target="14" />
+      <module name="nacos-seata-bill" target="14" />
+      <module name="nacos-seata-consumer" target="14" />
+      <module name="nacos-seata-provider" target="14" />
+      <module name="nacos-seata-user" target="14" />
+      <module name="rm" target="14" />
+      <module name="rm-datasource" target="14" />
+      <module name="saga" target="14" />
+      <module name="seata" target="14" />
+      <module name="seata-compressor-7z" target="14" />
+      <module name="seata-compressor-all" target="14" />
+      <module name="seata-compressor-bzip2" target="14" />
+      <module name="seata-compressor-gzip" target="14" />
+      <module name="seata-compressor-lz4" target="14" />
+      <module name="seata-compressor-zip" target="14" />
+      <module name="seata-config-all" target="14" />
+      <module name="seata-config-apollo" target="14" />
+      <module name="seata-config-consul" target="14" />
+      <module name="seata-config-core" target="14" />
+      <module name="seata-config-custom" target="14" />
+      <module name="seata-config-etcd3" target="14" />
+      <module name="seata-config-nacos" target="14" />
+      <module name="seata-config-spring-cloud" target="14" />
+      <module name="seata-config-zk" target="14" />
+      <module name="seata-discovery-all" target="14" />
+      <module name="seata-discovery-consul" target="14" />
+      <module name="seata-discovery-core" target="14" />
+      <module name="seata-discovery-custom" target="14" />
+      <module name="seata-discovery-etcd3" target="14" />
+      <module name="seata-discovery-eureka" target="14" />
+      <module name="seata-discovery-nacos" target="14" />
+      <module name="seata-discovery-redis" target="14" />
+      <module name="seata-discovery-sofa" target="14" />
+      <module name="seata-discovery-zk" target="14" />
+      <module name="seata-metrics-all" target="14" />
+      <module name="seata-metrics-api" target="14" />
+      <module name="seata-metrics-core" target="14" />
+      <module name="seata-metrics-exporter-prometheus" target="14" />
+      <module name="seata-metrics-registry-compact" target="14" />
+      <module name="seata-saga-engine" target="14" />
+      <module name="seata-saga-engine-store" target="14" />
+      <module name="seata-saga-processctrl" target="14" />
+      <module name="seata-saga-rm" target="14" />
+      <module name="seata-saga-statelang" target="14" />
+      <module name="seata-saga-tm" target="14" />
+      <module name="seata-serializer-all" target="14" />
+      <module name="seata-serializer-fst" target="14" />
+      <module name="seata-serializer-hessian" target="14" />
+      <module name="seata-serializer-kryo" target="14" />
+      <module name="seata-serializer-protobuf" target="14" />
+      <module name="seata-serializer-seata" target="14" />
+      <module name="seata-spring-boot-starter" target="14" />
+      <module name="seata-sqlparser-core" target="14" />
+      <module name="seata-sqlparser-druid" target="14" />
+      <module name="serializer" target="14" />
+      <module name="server" target="14" />
+      <module name="sofa-rpc" target="14" />
+      <module name="spring" target="14" />
+      <module name="sqlparser" target="14" />
+      <module name="tcc" target="14" />
+      <module name="test" target="14" />
+      <module name="tm" target="14" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="nacos-gateway" options="-parameters" />
+      <module name="nacos-model" options="-parameters" />
+      <module name="nacos-seata-bill" options="-parameters" />
+      <module name="nacos-seata-consumer" options="-parameters" />
+      <module name="nacos-seata-provider" options="-parameters" />
+      <module name="nacos-seata-user" options="-parameters" />
+    </option>
+  </component>
+</project>

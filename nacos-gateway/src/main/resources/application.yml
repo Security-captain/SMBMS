@@ -1,0 +1,18 @@
+server:
+  port: 9001
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true		   # 让gateway通过服务发现组件找到其他的微服务
+      routes:                  # 路由
+        - id: nacos-seata-user        # 唯一标识，通常使用服务id
+          uri: lb://nacos-seata-user  # 也可以写http://127.0.0.1:7011(不能负载均衡)
+          predicates:                 # 断言
+            - Path=/user/*        # 匹配转发路径，注意和上面路径区分开(如果两个服务路径相同会死循环)
+            - Method=GET,POST	        # 匹配请求方法
