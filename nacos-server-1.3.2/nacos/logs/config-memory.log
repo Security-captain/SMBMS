@@ -24556,3 +24556,27 @@
 
 2020-10-22 22:20:46,626 INFO groupCount = 80, subscriberClientCount = 0, subscriberCount = 0
 
+2020-10-22 22:20:56,500 INFO [long-pulling] client count 0
+
+2020-10-22 22:20:56,607 INFO toNotifyTaskSize = 0
+
+2020-10-22 22:20:56,626 INFO groupCount = 80, subscriberClientCount = 0, subscriberCount = 0
+
+2020-10-22 22:21:06,502 INFO [long-pulling] client count 0
+
+2020-10-22 22:21:06,607 INFO toNotifyTaskSize = 0
+
+2020-10-22 22:21:06,626 INFO groupCount = 80, subscriberClientCount = 0, subscriberCount = 0
+
+2020-10-22 22:21:16,503 INFO [long-pulling] client count 0
+
+2020-10-22 22:21:16,609 INFO toNotifyTaskSize = 0
+
+2020-10-22 22:21:16,627 INFO groupCount = 80, subscriberClientCount = 0, subscriberCount = 0
+
+2020-10-22 22:21:26,504 INFO [long-pulling] client count 0
+
+2020-10-22 22:21:26,610 INFO toNotifyTaskSize = 0
+
+2020-10-22 22:21:26,628 INFO groupCount = 80, subscriberClientCount = 0, subscriberCount = 0
+
