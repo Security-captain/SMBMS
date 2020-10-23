@@ -1,6 +1,3 @@
-# 1.0新添加的enabled激活自动配置，使得我们可以在yaml/properties文件中配置，
-# 避免了以前需要客户端引入2个文件：
-# file.conf 和 registry.conf
 seata:
   enabled: true     # 1.0新特性，需要依赖seata-spring-boot-starter,默认为true
   tx-service-group: bdqn_tx_group

@@ -5,9 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/SMBMS.iml" filepath="$PROJECT_DIR$/.idea/SMBMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/all/all.iml" filepath="$PROJECT_DIR$/seata/all/all.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/bom/bom.iml" filepath="$PROJECT_DIR$/seata/bom/bom.iml" />
-      <module fileurl="file://$PROJECT_DIR$/seata/common/common.iml" filepath="$PROJECT_DIR$/seata/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/compressor/compressor.iml" filepath="$PROJECT_DIR$/seata/compressor/compressor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/seata/config/config.iml" filepath="$PROJECT_DIR$/seata/config/config.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/core/core.iml" filepath="$PROJECT_DIR$/seata/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/discovery/discovery.iml" filepath="$PROJECT_DIR$/seata/discovery/discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/distribution/distribution.iml" filepath="$PROJECT_DIR$/seata/distribution/distribution.iml" />
@@ -26,13 +24,14 @@
       <module fileurl="file://$PROJECT_DIR$/seata/rm/rm.iml" filepath="$PROJECT_DIR$/seata/rm/rm.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/rm-datasource/rm-datasource.iml" filepath="$PROJECT_DIR$/seata/rm-datasource/rm-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/saga/saga.iml" filepath="$PROJECT_DIR$/seata/saga/saga.iml" />
-      <module fileurl="file://$PROJECT_DIR$/seata/seata.iml" filepath="$PROJECT_DIR$/seata/seata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seata/common/seata-common.iml" filepath="$PROJECT_DIR$/seata/common/seata-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/compressor/seata-compressor-7z/seata-compressor-7z.iml" filepath="$PROJECT_DIR$/seata/compressor/seata-compressor-7z/seata-compressor-7z.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/compressor/seata-compressor-all/seata-compressor-all.iml" filepath="$PROJECT_DIR$/seata/compressor/seata-compressor-all/seata-compressor-all.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/compressor/seata-compressor-bzip2/seata-compressor-bzip2.iml" filepath="$PROJECT_DIR$/seata/compressor/seata-compressor-bzip2/seata-compressor-bzip2.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/compressor/seata-compressor-gzip/seata-compressor-gzip.iml" filepath="$PROJECT_DIR$/seata/compressor/seata-compressor-gzip/seata-compressor-gzip.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/compressor/seata-compressor-lz4/seata-compressor-lz4.iml" filepath="$PROJECT_DIR$/seata/compressor/seata-compressor-lz4/seata-compressor-lz4.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/compressor/seata-compressor-zip/seata-compressor-zip.iml" filepath="$PROJECT_DIR$/seata/compressor/seata-compressor-zip/seata-compressor-zip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seata/config/seata-config.iml" filepath="$PROJECT_DIR$/seata/config/seata-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/config/seata-config-all/seata-config-all.iml" filepath="$PROJECT_DIR$/seata/config/seata-config-all/seata-config-all.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/config/seata-config-apollo/seata-config-apollo.iml" filepath="$PROJECT_DIR$/seata/config/seata-config-apollo/seata-config-apollo.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/config/seata-config-consul/seata-config-consul.iml" filepath="$PROJECT_DIR$/seata/config/seata-config-consul/seata-config-consul.iml" />
@@ -57,6 +56,7 @@
       <module fileurl="file://$PROJECT_DIR$/seata/metrics/seata-metrics-core/seata-metrics-core.iml" filepath="$PROJECT_DIR$/seata/metrics/seata-metrics-core/seata-metrics-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/metrics/seata-metrics-exporter-prometheus/seata-metrics-exporter-prometheus.iml" filepath="$PROJECT_DIR$/seata/metrics/seata-metrics-exporter-prometheus/seata-metrics-exporter-prometheus.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/metrics/seata-metrics-registry-compact/seata-metrics-registry-compact.iml" filepath="$PROJECT_DIR$/seata/metrics/seata-metrics-registry-compact/seata-metrics-registry-compact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seata/seata-parent.iml" filepath="$PROJECT_DIR$/seata/seata-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/saga/seata-saga-engine/seata-saga-engine.iml" filepath="$PROJECT_DIR$/seata/saga/seata-saga-engine/seata-saga-engine.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/saga/seata-saga-engine-store/seata-saga-engine-store.iml" filepath="$PROJECT_DIR$/seata/saga/seata-saga-engine-store/seata-saga-engine-store.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata/saga/seata-saga-processctrl/seata-saga-processctrl.iml" filepath="$PROJECT_DIR$/seata/saga/seata-saga-processctrl/seata-saga-processctrl.iml" />

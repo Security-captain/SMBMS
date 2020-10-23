@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.3.5.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../apache-maven-3.6.3/conf/repository/org/springframework/boot/spring-boot-starter-jdbc/2.3.5.BUILD-SNAPSHOT/spring-boot-starter-jdbc-2.3.5.BUILD-20201021.135810-55.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../apache-maven-3.6.3/conf/repository/org/springframework/boot/spring-boot-starter-jdbc/2.3.5.BUILD-SNAPSHOT/spring-boot-starter-jdbc-2.3.5.BUILD-20201023.045711-57.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../apache-maven-3.6.3/conf/repository/org/springframework/boot/spring-boot-starter-jdbc/2.3.5.BUILD-SNAPSHOT/spring-boot-starter-jdbc-2.3.5.BUILD-20201021.135810-55-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../apache-maven-3.6.3/conf/repository/org/springframework/boot/spring-boot-starter-jdbc/2.3.5.BUILD-SNAPSHOT/spring-boot-starter-jdbc-2.3.5.BUILD-20201023.045711-57-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../apache-maven-3.6.3/conf/repository/org/springframework/boot/spring-boot-starter-jdbc/2.3.5.BUILD-SNAPSHOT/spring-boot-starter-jdbc-2.3.5.BUILD-20201021.135810-55-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../apache-maven-3.6.3/conf/repository/org/springframework/boot/spring-boot-starter-jdbc/2.3.5.BUILD-SNAPSHOT/spring-boot-starter-jdbc-2.3.5.BUILD-20201023.045711-57-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
