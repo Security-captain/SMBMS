@@ -29,35 +29,23 @@ public class UserController {
     public String login(){
         return "login";
     }
+
     @GetMapping("/frame")
     public String frame(){
         return "frame";
     }
-    @GetMapping("/bill")
-    public String bill(){
-        return "bill";
-    }
-    @GetMapping("/billadd")
-    public String billadd(){
-        return "billadd";
-    }
-    @GetMapping("/provider")
-    public String provider(){
-        return "provider";
-    }
-    @GetMapping("/provideradd")
-    public String provideradd(){
-        return "provideradd";
-    }
+
     @GetMapping("/user")
     public String user(Model model){
         model.addAttribute("userlist",feignUserClient.user());
         return "user";
     }
+
     @GetMapping("/useradd")
     public String useradd(){
         return "useradd";
     }
+
     @GetMapping("/pwdmodify")
     public String pwdmodify(){
         return "pwdmodify";
