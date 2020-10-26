@@ -1,0 +1,216 @@
+2020-10-25 16:27:59,789 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:28:00,406 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:28:01,976 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:28:02,465 INFO serviceName: DEFAULT_GROUP@@nacos-seata-consumer changed, schedule push for: 192.168.181.1:60935, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,60935,196653899959600
+
+2020-10-25 16:28:02,473 INFO send udp packet: 192.168.181.1,60935,196653899959600
+
+2020-10-25 16:28:02,541 INFO received ack: {"type": "push-ack", "lastRefTime":"196653899959600", "data":""} from: 192.168.181.1:60935, cost: 68 ms, unacked: 0, total push: 21
+
+2020-10-25 16:28:05,381 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:28:05,480 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:60935, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,60935,196656851552300
+
+2020-10-25 16:28:05,490 INFO send udp packet: 192.168.181.1,60935,196656851552300
+
+2020-10-25 16:28:05,813 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:64654, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,64654,196656851552300
+
+2020-10-25 16:28:05,839 INFO send udp packet: 192.168.181.1,64654,196656851552300
+
+2020-10-25 16:28:05,952 INFO received ack: {"type": "push-ack", "lastRefTime":"196656851552300", "data":""} from: 192.168.181.1:60935, cost: 462 ms, unacked: 1, total push: 23
+
+2020-10-25 16:28:06,033 INFO received ack: {"type": "push-ack", "lastRefTime":"196656851552300", "data":""} from: 192.168.181.1:64654, cost: 127 ms, unacked: 0, total push: 23
+
+2020-10-25 16:28:14,705 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:28:14,836 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:60935, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,60935,196666172968700
+
+2020-10-25 16:28:14,836 INFO send udp packet: 192.168.181.1,60935,196666172968700
+
+2020-10-25 16:28:14,854 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:64654, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,64654,196666172968700
+
+2020-10-25 16:28:14,854 INFO send udp packet: 192.168.181.1,64654,196666172968700
+
+2020-10-25 16:28:14,995 INFO received ack: {"type": "push-ack", "lastRefTime":"196666172968700", "data":""} from: 192.168.181.1:64654, cost: 141 ms, unacked: 1, total push: 25
+
+2020-10-25 16:28:15,061 INFO received ack: {"type": "push-ack", "lastRefTime":"196666172968700", "data":""} from: 192.168.181.1:60935, cost: 225 ms, unacked: 0, total push: 25
+
+2020-10-25 16:28:22,676 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:28:22,806 INFO serviceName: DEFAULT_GROUP@@nacos-seata-consumer changed, schedule push for: 192.168.181.1:60935, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,60935,196674139849700
+
+2020-10-25 16:28:22,806 INFO send udp packet: 192.168.181.1,60935,196674139849700
+
+2020-10-25 16:28:22,809 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:28:22,809 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:60935, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,60935,196674272861300
+
+2020-10-25 16:28:22,809 INFO send udp packet: 192.168.181.1,60935,196674272861300
+
+2020-10-25 16:28:22,810 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:64654, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,64654,196674272861300
+
+2020-10-25 16:28:22,810 INFO send udp packet: 192.168.181.1,64654,196674272861300
+
+2020-10-25 16:28:22,827 INFO received ack: {"type": "push-ack", "lastRefTime":"196674272861300", "data":""} from: 192.168.181.1:64654, cost: 17 ms, unacked: 2, total push: 3
+
+2020-10-25 16:28:22,827 INFO received ack: {"type": "push-ack", "lastRefTime":"196674139849700", "data":""} from: 192.168.181.1:60935, cost: 21 ms, unacked: 1, total push: 3
+
+2020-10-25 16:28:22,836 INFO received ack: {"type": "push-ack", "lastRefTime":"196674272861300", "data":""} from: 192.168.181.1:60935, cost: 27 ms, unacked: 0, total push: 3
+
+2020-10-25 16:28:23,895 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:28:23,897 INFO serviceName: DEFAULT_GROUP@@nacos-seata-consumer changed, schedule push for: 192.168.181.1:60935, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,60935,196675359373600
+
+2020-10-25 16:28:23,897 INFO send udp packet: 192.168.181.1,60935,196675359373600
+
+2020-10-25 16:28:23,911 INFO received ack: {"type": "push-ack", "lastRefTime":"196675359373600", "data":""} from: 192.168.181.1:60935, cost: 14 ms, unacked: 0, total push: 4
+
+2020-10-25 16:28:24,602 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:28:24,602 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:60935, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,60935,196676065578600
+
+2020-10-25 16:28:24,602 INFO send udp packet: 192.168.181.1,60935,196676065578600
+
+2020-10-25 16:28:24,603 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:64654, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,64654,196676065578600
+
+2020-10-25 16:28:24,603 INFO send udp packet: 192.168.181.1,64654,196676065578600
+
+2020-10-25 16:28:24,609 INFO received ack: {"type": "push-ack", "lastRefTime":"196676065578600", "data":""} from: 192.168.181.1:64654, cost: 6 ms, unacked: 1, total push: 6
+
+2020-10-25 16:28:24,693 INFO received ack: {"type": "push-ack", "lastRefTime":"196676065578600", "data":""} from: 192.168.181.1:60935, cost: 91 ms, unacked: 0, total push: 6
+
+2020-10-25 16:35:25,915 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:35:40,969 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:35:45,989 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:36:01,012 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:40:01,636 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:40:01,640 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:52120, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,52120,197373099021600
+
+2020-10-25 16:40:01,640 INFO send udp packet: 192.168.181.1,52120,197373099021600
+
+2020-10-25 16:40:01,655 INFO received ack: {"type": "push-ack", "lastRefTime":"197373099021600", "data":""} from: 192.168.181.1:52120, cost: 15 ms, unacked: 0, total push: 7
+
+2020-10-25 16:40:41,177 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:40:41,178 INFO serviceName: DEFAULT_GROUP@@nacos-seata-consumer changed, schedule push for: 192.168.181.1:57553, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,57553,197412639749600
+
+2020-10-25 16:40:41,178 INFO send udp packet: 192.168.181.1,57553,197412639749600
+
+2020-10-25 16:40:41,182 INFO received ack: {"type": "push-ack", "lastRefTime":"197412639749600", "data":""} from: 192.168.181.1:57553, cost: 3 ms, unacked: 0, total push: 8
+
+2020-10-25 16:45:11,240 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:45:16,705 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:45:26,350 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:45:31,719 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:45:42,526 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:45:42,528 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:54386, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,54386,197713988724700
+
+2020-10-25 16:45:42,529 INFO send udp packet: 192.168.181.1,54386,197713988724700
+
+2020-10-25 16:45:42,541 INFO received ack: {"type": "push-ack", "lastRefTime":"197713988724700", "data":""} from: 192.168.181.1:54386, cost: 12 ms, unacked: 0, total push: 9
+
+2020-10-25 16:47:34,232 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:47:34,261 INFO serviceName: DEFAULT_GROUP@@nacos-seata-consumer changed, schedule push for: 192.168.181.1:64809, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,64809,197825715063800
+
+2020-10-25 16:47:34,261 INFO send udp packet: 192.168.181.1,64809,197825715063800
+
+2020-10-25 16:47:34,288 INFO received ack: {"type": "push-ack", "lastRefTime":"197825715063800", "data":""} from: 192.168.181.1:64809, cost: 27 ms, unacked: 0, total push: 10
+
+2020-10-25 16:49:11,384 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:49:11,775 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 16:49:26,505 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 16:49:26,800 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 17:04:53,549 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 17:04:53,574 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:55265, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,55265,198865026516200
+
+2020-10-25 17:04:53,574 INFO send udp packet: 192.168.181.1,55265,198865026516200
+
+2020-10-25 17:04:53,601 INFO received ack: {"type": "push-ack", "lastRefTime":"198865026516200", "data":""} from: 192.168.181.1:55265, cost: 27 ms, unacked: 0, total push: 11
+
+2020-10-25 17:10:08,710 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 17:10:24,185 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 17:14:47,135 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 17:14:47,192 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:54866, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,54866,199458612214200
+
+2020-10-25 17:14:47,192 INFO send udp packet: 192.168.181.1,54866,199458612214200
+
+2020-10-25 17:14:47,329 INFO received ack: {"type": "push-ack", "lastRefTime":"199458612214200", "data":""} from: 192.168.181.1:54866, cost: 137 ms, unacked: 0, total push: 12
+
+2020-10-25 17:19:17,550 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 17:19:17,699 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:54866, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,54866,199729106543800
+
+2020-10-25 17:19:17,700 INFO send udp packet: 192.168.181.1,54866,199729106543800
+
+2020-10-25 17:19:17,833 INFO received ack: {"type": "push-ack", "lastRefTime":"199729106543800", "data":""} from: 192.168.181.1:54866, cost: 133 ms, unacked: 0, total push: 13
+
+2020-10-25 17:19:50,585 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 17:19:50,600 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:51304, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,51304,199762048828500
+
+2020-10-25 17:19:50,600 INFO send udp packet: 192.168.181.1,51304,199762048828500
+
+2020-10-25 17:19:50,608 INFO received ack: {"type": "push-ack", "lastRefTime":"199762048828500", "data":""} from: 192.168.181.1:51304, cost: 8 ms, unacked: 0, total push: 14
+
+2020-10-25 17:20:57,080 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 17:20:57,088 INFO serviceName: DEFAULT_GROUP@@nacos-seata-consumer changed, schedule push for: 192.168.181.1:57711, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,57711,199828543401400
+
+2020-10-25 17:20:57,089 INFO send udp packet: 192.168.181.1,57711,199828543401400
+
+2020-10-25 17:20:57,107 INFO received ack: {"type": "push-ack", "lastRefTime":"199828543401400", "data":""} from: 192.168.181.1:57711, cost: 18 ms, unacked: 0, total push: 15
+
+2020-10-25 17:29:22,376 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 17:29:27,193 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 17:29:37,485 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 17:29:42,208 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 17:32:04,564 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 17:32:04,596 INFO serviceName: DEFAULT_GROUP@@nacos-seata-user changed, schedule push for: 192.168.181.1:54505, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,54505,200496042400500
+
+2020-10-25 17:32:04,597 INFO send udp packet: 192.168.181.1,54505,200496042400500
+
+2020-10-25 17:32:04,661 INFO received ack: {"type": "push-ack", "lastRefTime":"200496042400500", "data":""} from: 192.168.181.1:54505, cost: 64 ms, unacked: 0, total push: 16
+
+2020-10-25 17:33:07,069 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 17:33:07,088 INFO serviceName: DEFAULT_GROUP@@nacos-seata-consumer changed, schedule push for: 192.168.181.1:50770, agent: Nacos-Java-Client:v1.3.3, key: 192.168.181.1,50770,200558536755100
+
+2020-10-25 17:33:07,089 INFO send udp packet: 192.168.181.1,50770,200558536755100
+
+2020-10-25 17:33:07,138 INFO received ack: {"type": "push-ack", "lastRefTime":"200558536755100", "data":""} from: 192.168.181.1:50770, cost: 49 ms, unacked: 0, total push: 17
+
+2020-10-25 18:10:02,435 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 18:10:09,993 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+
+2020-10-25 18:10:17,582 INFO DEFAULT_GROUP@@nacos-seata-consumer is changed, add it to push queue.
+
+2020-10-25 18:10:25,001 INFO DEFAULT_GROUP@@nacos-seata-user is changed, add it to push queue.
+

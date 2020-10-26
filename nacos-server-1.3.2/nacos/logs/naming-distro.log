@@ -1,4 +1,32 @@
-2020-10-23 11:48:50,403 INFO load data success
+2020-10-25 16:28:18,478 ERROR failed to req API:http://192.168.181.1:8848/nacos/v1/ns/distro/checksum
 
-2020-10-23 11:48:50,404 INFO distro notifier started
+java.util.concurrent.TimeoutException: Request reached idle time out of 10000 ms after 14724 ms
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.expire(NettyAsyncHttpProvider.java:1777)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1802)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-10-25 16:28:18,479 ERROR failed to req API:http://192.168.181.1:8848/nacos/v1/ns/distro/checksum
+
+java.util.concurrent.TimeoutException: Request reached idle time out of 10000 ms after 10004 ms
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.expire(NettyAsyncHttpProvider.java:1777)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1802)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-10-25 16:28:21,499 ERROR receive responsible key timestamp of com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user from 192.168.43.174:8848
+
+2020-10-25 16:28:21,499 ERROR receive responsible key timestamp of com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user from 192.168.43.174:8848
+
+2020-10-25 16:28:21,499 ERROR receive responsible key timestamp of com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user from 192.168.43.174:8848
+
+2020-10-25 16:28:21,499 ERROR receive responsible key timestamp of com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user from 192.168.43.174:8848
+
+2020-10-25 16:28:22,815 ERROR receive responsible key timestamp of com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user from 192.168.43.174:8848
 

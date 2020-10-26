@@ -1,0 +1,300 @@
+2020-10-23 08:32:44,404 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h48m29s587ms514µs).
+
+2020-10-23 08:32:46,340 WARN clearConfigHistory start
+
+2020-10-23 08:34:19,743 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m35s495ms698µs200ns).
+
+2020-10-23 08:37:55,232 INFO [capacityManagement] start correct usage
+
+2020-10-23 08:37:55,278 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 08:42:47,486 WARN clearConfigHistory start
+
+2020-10-23 08:47:55,280 INFO [capacityManagement] start correct usage
+
+2020-10-23 08:47:55,332 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 08:52:47,828 WARN clearConfigHistory start
+
+2020-10-23 08:57:55,333 INFO [capacityManagement] start correct usage
+
+2020-10-23 08:57:55,360 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 09:02:47,908 WARN clearConfigHistory start
+
+2020-10-23 09:07:55,363 INFO [capacityManagement] start correct usage
+
+2020-10-23 09:07:55,479 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 09:12:48,237 WARN clearConfigHistory start
+
+2020-10-23 09:17:55,481 INFO [capacityManagement] start correct usage
+
+2020-10-23 09:17:55,514 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 09:22:49,183 WARN clearConfigHistory start
+
+2020-10-23 09:27:55,516 INFO [capacityManagement] start correct usage
+
+2020-10-23 09:27:55,517 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 09:32:49,330 WARN clearConfigHistory start
+
+2020-10-23 09:37:55,518 INFO [capacityManagement] start correct usage
+
+2020-10-23 09:37:55,556 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 09:42:49,392 WARN clearConfigHistory start
+
+2020-10-23 09:47:55,558 INFO [capacityManagement] start correct usage
+
+2020-10-23 09:47:55,741 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 11:48:26,966 INFO Starting Nacos v1.3.2 on DESKTOP-30E4DPM with PID 11496 (D:\Documents\IdaeProjects\SMBMS\nacos-server-1.3.2\nacos\target\nacos-server.jar started by Security-captain in D:\Documents\IdaeProjects\SMBMS\nacos-server-1.3.2\nacos\bin)
+
+2020-10-23 11:48:27,014 INFO The following profiles are active: standalone
+
+2020-10-23 11:48:37,920 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$700842fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-10-23 11:48:38,228 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-10-23 11:48:38,243 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@9f46d94' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-10-23 11:48:38,245 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$94dce5b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-10-23 11:48:38,256 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-10-23 11:48:40,085 INFO Tomcat initialized with port(s): 8848 (http)
+
+2020-10-23 11:48:40,209 INFO Starting service [Tomcat]
+
+2020-10-23 11:48:40,209 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
+
+2020-10-23 11:48:40,230 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\JDK\jdk-15\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;D:\SymbianVM\Perl\bin\;C:\Program Files (x86)\Common Files\Symbian\Tools;D:\SymbianVM\CSL Arm Toolchain\bin;D:\Anaconda3;D:\Anaconda3\Scripts;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\cudnn765;D:\JDK\jdk-15\bin;D:\JDK\jdk-15\jre\bin;D:\Eclipse\eclipse\apache-maven-3.6.3\bin;D:\apache-tomcat-9.0.29\bin;D:\Oracle\bin;C:\Program Files (x86)\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\wbem;C:\Program Files (x86)\VisualSVN\bin;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;D:\Program Files\Microsoft SQL Server\150\Tools\Binn\;D:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;D:\Program Files\Microsoft SQL Server\150\DTS\Binn\;D:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\DevEco Studio\bin;D:\TortoiseSVN\bin;D:\VisualSVN Server\bin;D:\PortableGit\bin;D:\BaiduNetdiskDownload\TWRP-Magisk-Riru-EdXposed\fastboot通用工具;D:\U盘启动恢复工具\ExtFS for Windows\;C:\Users\24468\AppData\Local\Microsoft\WindowsApps;C:\Users\24468\AppData\Local\Programs\ipfs-desktop\resources\app.asar.unpacked\out\ipfs-on-path\scripts\bin-win;C:\Users\24468\AppData\Local\Programs\ipse-desktop\resources\app.asar.unpacked\out\ipfs-on-path\scripts\bin-win;D:\PyCharm 2020.1.2\bin;;;D:\IntelliJ IDEA 2020.2.1\bin;;%DevEco Studio%;.]
+
+2020-10-23 11:48:40,594 INFO Initializing Spring embedded WebApplicationContext
+
+2020-10-23 11:48:40,594 INFO Root WebApplicationContext: initialization completed in 13238 ms
+
+2020-10-23 11:48:42,186 WARN HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+
+2020-10-23 11:48:42,187 INFO HikariPool-1 - Starting...
+
+2020-10-23 11:48:42,262 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2020-10-23 11:48:45,414 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2020-10-23 11:48:45,424 INFO HikariPool-1 - Start completed.
+
+2020-10-23 11:48:49,921 INFO Nacos-related cluster resource initialization
+
+2020-10-23 11:48:49,999 INFO The cluster resource is initialized
+
+2020-10-23 11:48:51,258 INFO Reflections took 102 ms to scan 1 urls, producing 6 keys and 24 values 
+
+2020-10-23 11:48:51,356 INFO Reflections took 9 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2020-10-23 11:48:51,397 INFO Reflections took 8 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2020-10-23 11:48:55,347 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-10-23 11:48:55,799 INFO Adding welcome page: class path resource [static/index.html]
+
+2020-10-23 11:48:56,788 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2020-10-23 11:48:56,891 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45adc393, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f1483fd, org.springframework.security.web.header.HeaderWriterFilter@2f14b0f6, org.springframework.security.web.csrf.CsrfFilter@7cac93fe, org.springframework.security.web.authentication.logout.LogoutFilter@54089484, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e03db1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@630390b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65fe2691, org.springframework.security.web.session.SessionManagementFilter@19b206ee, org.springframework.security.web.access.ExceptionTranslationFilter@712c5463]
+
+2020-10-23 11:48:57,193 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2020-10-23 11:48:57,249 INFO Initializing ExecutorService 'taskScheduler'
+
+2020-10-23 11:48:57,670 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2020-10-23 11:48:57,681 INFO Started Nacos in 34.538 seconds (JVM running for 37.811)
+
+2020-10-23 11:48:57,682 INFO Nacos Log files: D:\Documents\IdaeProjects\SMBMS\nacos-server-1.3.2\nacos\logs
+
+2020-10-23 11:48:57,686 INFO Nacos Log files: D:\Documents\IdaeProjects\SMBMS\nacos-server-1.3.2\nacos\conf
+
+2020-10-23 11:48:57,687 INFO Nacos Log files: D:\Documents\IdaeProjects\SMBMS\nacos-server-1.3.2\nacos\data
+
+2020-10-23 11:48:57,688 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2020-10-23 11:49:25,585 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2020-10-23 11:49:25,585 INFO Initializing Servlet 'dispatcherServlet'
+
+2020-10-23 11:49:25,633 INFO Completed initialization in 47 ms
+
+2020-10-23 11:58:52,095 INFO [capacityManagement] start correct usage
+
+2020-10-23 11:58:52,617 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 11:58:53,446 WARN clearConfigHistory start
+
+2020-10-23 12:08:52,620 INFO [capacityManagement] start correct usage
+
+2020-10-23 12:08:52,633 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 12:08:53,577 WARN clearConfigHistory start
+
+2020-10-23 12:18:52,634 INFO [capacityManagement] start correct usage
+
+2020-10-23 12:18:52,635 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 12:18:53,868 WARN clearConfigHistory start
+
+2020-10-23 14:10:02,137 WARN clearConfigHistory start
+
+2020-10-23 14:10:24,868 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h49m39s275ms44µs300ns).
+
+2020-10-23 14:18:01,892 INFO [capacityManagement] start correct usage
+
+2020-10-23 14:18:01,927 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 14:20:02,151 WARN clearConfigHistory start
+
+2020-10-23 14:28:01,932 INFO [capacityManagement] start correct usage
+
+2020-10-23 14:28:01,932 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 14:30:02,203 WARN clearConfigHistory start
+
+2020-10-23 14:38:01,937 INFO [capacityManagement] start correct usage
+
+2020-10-23 14:38:01,937 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 14:40:02,236 WARN clearConfigHistory start
+
+2020-10-23 14:48:01,939 INFO [capacityManagement] start correct usage
+
+2020-10-23 14:48:01,939 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 14:50:02,242 WARN clearConfigHistory start
+
+2020-10-23 14:58:01,945 INFO [capacityManagement] start correct usage
+
+2020-10-23 14:58:01,994 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 15:00:02,248 WARN clearConfigHistory start
+
+2020-10-23 15:08:01,997 INFO [capacityManagement] start correct usage
+
+2020-10-23 15:08:01,999 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 15:10:02,463 WARN clearConfigHistory start
+
+2020-10-23 15:18:02,003 INFO [capacityManagement] start correct usage
+
+2020-10-23 15:18:02,034 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 15:20:02,533 WARN clearConfigHistory start
+
+2020-10-23 15:28:02,037 INFO [capacityManagement] start correct usage
+
+2020-10-23 15:28:02,070 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 15:30:02,605 WARN clearConfigHistory start
+
+2020-10-23 15:38:02,074 INFO [capacityManagement] start correct usage
+
+2020-10-23 15:38:02,142 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 15:40:02,660 WARN clearConfigHistory start
+
+2020-10-23 15:48:02,145 INFO [capacityManagement] start correct usage
+
+2020-10-23 15:48:02,190 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 15:50:03,977 WARN clearConfigHistory start
+
+2020-10-23 15:58:02,193 INFO [capacityManagement] start correct usage
+
+2020-10-23 15:58:02,209 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 16:00:04,156 WARN clearConfigHistory start
+
+2020-10-23 16:08:02,217 INFO [capacityManagement] start correct usage
+
+2020-10-23 16:08:02,217 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 16:10:04,281 WARN clearConfigHistory start
+
+2020-10-23 16:18:02,219 INFO [capacityManagement] start correct usage
+
+2020-10-23 16:18:02,409 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 16:20:05,601 WARN clearConfigHistory start
+
+2020-10-23 16:28:02,414 INFO [capacityManagement] start correct usage
+
+2020-10-23 16:28:02,438 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 16:30:05,746 WARN clearConfigHistory start
+
+2020-10-23 16:38:02,448 INFO [capacityManagement] start correct usage
+
+2020-10-23 16:38:02,472 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 16:40:05,821 WARN clearConfigHistory start
+
+2020-10-23 16:48:02,476 INFO [capacityManagement] start correct usage
+
+2020-10-23 16:48:02,518 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 16:50:05,957 WARN clearConfigHistory start
+
+2020-10-23 16:58:02,522 INFO [capacityManagement] start correct usage
+
+2020-10-23 16:58:02,561 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 17:00:06,055 WARN clearConfigHistory start
+
+2020-10-23 17:08:02,564 INFO [capacityManagement] start correct usage
+
+2020-10-23 17:08:02,578 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 17:10:06,182 WARN clearConfigHistory start
+
+2020-10-23 17:18:02,581 INFO [capacityManagement] start correct usage
+
+2020-10-23 17:18:02,622 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 17:20:06,441 WARN clearConfigHistory start
+
+2020-10-23 17:28:02,626 INFO [capacityManagement] start correct usage
+
+2020-10-23 17:28:02,674 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 17:30:06,507 WARN clearConfigHistory start
+
+2020-10-23 17:38:02,681 INFO [capacityManagement] start correct usage
+
+2020-10-23 17:38:02,696 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 17:40:06,579 WARN clearConfigHistory start
+
+2020-10-23 17:48:02,698 INFO [capacityManagement] start correct usage
+
+2020-10-23 17:48:02,700 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 17:50:06,718 WARN clearConfigHistory start
+
+2020-10-23 17:58:02,704 INFO [capacityManagement] start correct usage
+
+2020-10-23 17:58:02,716 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 18:00:06,819 WARN clearConfigHistory start
+
+2020-10-23 18:08:02,717 INFO [capacityManagement] start correct usage
+
+2020-10-23 18:08:02,739 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 18:10:07,087 WARN clearConfigHistory start
+
+2020-10-23 18:18:02,744 INFO [capacityManagement] start correct usage
+
+2020-10-23 18:18:02,744 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-10-23 18:20:07,147 WARN clearConfigHistory start
+

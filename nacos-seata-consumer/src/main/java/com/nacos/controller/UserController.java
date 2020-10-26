@@ -1,6 +1,8 @@
 package com.nacos.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.nacos.feign.FeignUserClient;
+import com.nacos.pojo.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Controller
 public class UserController {
@@ -25,11 +28,6 @@ public class UserController {
         }
     }
 
-    @GetMapping("/login")
-    public String login(){
-        return "login";
-    }
-
     @GetMapping("/frame")
     public String frame(){
         return "frame";
@@ -37,7 +35,8 @@ public class UserController {
 
     @GetMapping("/user")
     public String user(Model model){
-        model.addAttribute("userlist",feignUserClient.user());
+        List<User> userlist= JSONObject.parseArray(feignUserClient.user(), User.class);
+        model.addAttribute("userlist",userlist);
         return "user";
     }
 

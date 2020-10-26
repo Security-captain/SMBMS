@@ -16,8 +16,8 @@
         <module name="nacos-model" />
         <module name="seata-metrics-all" />
         <module name="seata-discovery-sofa" />
-        <module name="seata-discovery-zk" />
         <module name="spring" />
+        <module name="seata-discovery-zk" />
         <module name="seata-discovery-consul" />
         <module name="seata-discovery-etcd3" />
         <module name="seata-saga-processctrl" />
@@ -40,7 +40,6 @@
         <module name="seata-compressor-bzip2" />
         <module name="http" />
         <module name="rm" />
-        <module name="seata-common" />
         <module name="server" />
         <module name="seata-discovery-eureka" />
         <module name="seata-saga-tm" />
@@ -53,12 +52,13 @@
         <module name="seata-saga-engine-store" />
         <module name="seata-discovery-nacos" />
         <module name="seata-serializer-seata" />
+        <module name="common" />
         <module name="tcc" />
         <module name="seata-serializer-kryo" />
         <module name="seata-config-nacos" />
+        <module name="sofa-rpc" />
         <module name="seata-config-zk" />
         <module name="seata-config-core" />
-        <module name="sofa-rpc" />
         <module name="seata-compressor-all" />
         <module name="seata-compressor-zip" />
         <module name="seata-config-spring-cloud" />
@@ -100,14 +100,12 @@
       <module name="rm-datasource" target="14" />
       <module name="saga" target="14" />
       <module name="seata" target="14" />
-      <module name="seata-common" target="14" />
       <module name="seata-compressor-7z" target="14" />
       <module name="seata-compressor-all" target="14" />
       <module name="seata-compressor-bzip2" target="14" />
       <module name="seata-compressor-gzip" target="14" />
       <module name="seata-compressor-lz4" target="14" />
       <module name="seata-compressor-zip" target="14" />
-      <module name="seata-config" target="14" />
       <module name="seata-config-all" target="14" />
       <module name="seata-config-apollo" target="14" />
       <module name="seata-config-consul" target="14" />
@@ -132,7 +130,6 @@
       <module name="seata-metrics-core" target="14" />
       <module name="seata-metrics-exporter-prometheus" target="14" />
       <module name="seata-metrics-registry-compact" target="14" />
-      <module name="seata-parent" target="14" />
       <module name="seata-saga-engine" target="14" />
       <module name="seata-saga-engine-store" target="14" />
       <module name="seata-saga-processctrl" target="14" />
