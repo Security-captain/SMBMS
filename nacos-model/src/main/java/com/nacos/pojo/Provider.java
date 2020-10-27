@@ -18,7 +18,7 @@ import java.util.Date;
 public class Provider {
     @TableId(value = "id",type = IdType.AUTO)
     private BigInteger id;
-    @TableField(value = "userCode")
+    @TableField(value = "proCode")
     private String proCode;
     @TableField(value = "proName")
     private String proName;

@@ -6,6 +6,7 @@ import com.nacos.pojo.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -34,9 +35,10 @@ public class UserController {
     }
 
     @GetMapping("/user")
-    public String user(Model model){
-        List<User> userlist= JSONObject.parseArray(feignUserClient.user(), User.class);
+    public String user(@PathVariable int current, Model model){
+        List<User> userlist= JSONObject.parseArray(feignUserClient.user(current), User.class);
         model.addAttribute("userlist",userlist);
+        model.addAttribute("current",current);
         return "user";
     }
 

@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/nacos-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nacos-model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nacos-seata-bill/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-seata-bill/src/main/resources/application.yml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/nacos-seata-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nacos-seata-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nacos-seata-user/src/main/java" charset="UTF-8" />
@@ -106,5 +107,6 @@
     <file url="file://$PROJECT_DIR$/seata/tcc/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/seata/tm/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/seata/tm/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 seata:
-  enabled: true     # 1.0鏂扮壒鎬э紝闇�瑕佷緷璧杝eata-spring-boot-starter,榛樿涓簍rue
+  enabled: true     # 1.0新特性，需要依赖seata-spring-boot-starter,默认为true
   tx-service-group: bdqn_tx_group
   registry:
     type: nacos
@@ -17,7 +17,7 @@ server:
 
 spring:
   application:
-    name: nacos-seata-provider
+    name: nacos-seata-bill
   cloud:
     nacos:
       discovery:
@@ -27,7 +27,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/provider?serverTimezone=GMT
+    url: jdbc:mysql://127.0.0.1:3306/bill?serverTimezone=GMT
     username: root
     password: root
 
@@ -47,4 +47,3 @@ management:
     web:
       exposure:
         include: "*"
-

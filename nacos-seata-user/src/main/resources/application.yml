@@ -1,3 +1,33 @@
+server:
+  port: 7001
+
+mybatis-plus:
+  type-aliases-package: com.nacos.pojo
+  mapper-locations: classpath:com/nacos/mapper/xml/*.xml
+  configuration:
+    auto-mapping-behavior: full
+    use-generated-keys: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+spring:
+  application:
+    name: nacos-seata-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr:  127.0.0.1:8848
+    sentinel:
+      dashboard: 127.0.0.1:8080
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/user?serverTimezone=GMT
+    username: root
+    password: root
+
 seata:
   enabled: true     # 1.0新特性，需要依赖seata-spring-boot-starter,默认为true
   tx-service-group: bdqn_tx_group
@@ -11,42 +41,6 @@ seata:
         datasource-autoproxy: false
   service:
     disable-global-transaction: false   #bug
-
-server:
-  port: 8001
-
-spring:
-  application:
-    name: nacos-seata-user
-  cloud:
-    nacos:
-      discovery:
-        server-addr:  127.0.0.1:8848
-    sentinel:
-#      transport:
-      dashboard: 127.0.0.1:8080
-#      eager: true
-
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/user?serverTimezone=GMT
-    username: root
-    password: root
-
-  thymeleaf:
-    encoding: utf-8
-    cache: false
-
-mybatis-plus:
-  type-aliases-package: com.nacos.pojo
-  mapper-locations: classpath:com/nacos/mapper/xml/*.xml
-  configuration:
-    auto-mapping-behavior: full
-    use-generated-keys: true
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  global-config:
-    db-config:
-      id-type: auto
 
 management:
   endpoints:

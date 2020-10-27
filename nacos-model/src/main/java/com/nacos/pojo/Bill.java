@@ -19,7 +19,7 @@ import java.util.Date;
 public class Bill {
     @TableId(value = "id",type = IdType.AUTO)
     private BigInteger id;
-    @TableField(value = "userCode")
+    @TableField(value = "billCode")
     private String billCode;
     @TableField(value = "productName")
     private String productName;
