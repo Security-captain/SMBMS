@@ -27,7 +27,7 @@ public class UserController {
         if("query".equals(mp.get("method"))){//查询
             if(mp.get("pageIndex")!=null){//pageIndex不为空
                 Page<User> page =new Page<>(Integer.parseInt(mp.get("pageIndex").toString()),5);
-                if(mp.get("queryname")!=null || mp.get("queryUserRole")!=null){//条件分页查询
+                if(mp.get("queryname")!=null || Integer.parseInt(mp.get("queryUserRole").toString())>0){//条件分页查询
                     IPage<User> iPage= userService.page(page,new QueryWrapper<>().eq("userCode",mp.get("queryname")));
                     mp.put("Total",iPage.getTotal());
                     mp.put("Current",iPage.getCurrent());
