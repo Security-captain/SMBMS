@@ -149,10 +149,10 @@
         <div class="page-bar">
             <ul class="page-num-ul clearfix">
                 <li th:text="'共'+${Total}+'条记录&nbsp;&nbsp; '+${Current}+'/'+${Pages}+'页'">共11条记录&nbsp;&nbsp; 1/3页</li>
-                <a href="javascript:void(0);">首页</a>
-                <a href="javascript:void(0);">上一页</a>
-                <a href="javascript:void(0);">下一页</a>
-                <a href="javascript:void(0);">最后一页</a>
+                <a th:href="@{'/user?method=query&pageIndex=1'}">首页</a>
+                <a th:href="@{'/user?method=query&pageIndex='+${Current}}">上一页</a>
+                <a th:href="@{'/user?method=query&pageIndex='+${Current}}">下一页</a>
+                <a th:href="@{'/user?method=query&pageIndex='+${Pages}}">最后一页</a>
                 &nbsp;&nbsp;
             </ul>
             <span class="page-go-form"><label>跳转至</label>

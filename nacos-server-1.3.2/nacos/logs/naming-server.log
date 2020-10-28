@@ -112,3 +112,279 @@
 
 2020-10-28 15:24:18,661 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603869858660,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
 
+2020-10-28 15:27:34,899 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-user, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603870020484,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 15:27:34,958 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[]}
+
+2020-10-28 15:27:36,467 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603870023993,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 15:27:36,467 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 15:29:37,251 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-user] services are automatically cleaned
+
+2020-10-28 15:29:37,344 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-consumer] services are automatically cleaned
+
+2020-10-28 15:29:37,344 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603870054960,"checksum":"43288c3e0baeb9f9eb9bd9d257845f8c","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-user","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 15:29:37,344 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603870056467,"checksum":"c7d92d3dd7785df113d5f3cc6afc0332","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 15:49:16,424 INFO creating empty service public:DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 15:49:16,460 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603871356430,"checksum":"6f7de75d47196daae21a03fbb17ebf61","clusterMap":{},"empty":true}
+
+2020-10-28 15:49:16,471 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603871356389,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-10-28 15:49:16,475 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[{"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603871356389,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 15:49:46,203 INFO creating empty service public:DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 15:49:46,204 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603871386203,"checksum":"8711374c4620fc573636c100083f0e21","clusterMap":{},"empty":true}
+
+2020-10-28 15:49:46,204 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603871386203,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-10-28 15:49:46,204 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603871386203,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 15:51:31,224 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603871456301,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 15:51:31,321 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 15:52:32,471 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603871552453,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 15:55:36,394 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603871702628,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 15:55:36,425 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 15:55:36,574 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-user, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603871701963,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 15:55:36,574 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[]}
+
+2020-10-28 15:57:37,263 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-user] services are automatically cleaned
+
+2020-10-28 15:57:37,310 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-consumer] services are automatically cleaned
+
+2020-10-28 15:57:37,326 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603871736574,"checksum":"43288c3e0baeb9f9eb9bd9d257845f8c","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-user","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 15:57:37,404 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603871736425,"checksum":"c7d92d3dd7785df113d5f3cc6afc0332","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 16:24:01,187 INFO creating empty service public:DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 16:24:01,227 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603873441192,"checksum":"6f7de75d47196daae21a03fbb17ebf61","clusterMap":{},"empty":true}
+
+2020-10-28 16:24:01,238 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603873441146,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-10-28 16:24:01,243 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[{"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603873441146,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 16:24:54,086 INFO creating empty service public:DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 16:24:54,087 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603873494087,"checksum":"8711374c4620fc573636c100083f0e21","clusterMap":{},"empty":true}
+
+2020-10-28 16:24:54,089 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603873494086,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-10-28 16:24:54,089 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603873494086,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 16:27:28,512 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 16:27:28,651 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603873648632,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 16:27:29,595 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 16:27:29,653 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 16:28:49,136 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603873698695,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 16:28:49,224 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 16:28:55,140 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603873735140,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 16:31:39,254 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603873865366,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 16:31:39,261 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 16:31:56,459 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603873916419,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 16:38:59,355 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874307369,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 16:38:59,437 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 16:39:41,434 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-user, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874347824,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 16:39:41,438 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[]}
+
+2020-10-28 16:40:06,650 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[{"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874406616,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 16:40:38,061 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874438061,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 16:44:44,481 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874653787,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 16:44:44,567 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 16:44:51,507 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-user, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874657069,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 16:44:51,511 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[]}
+
+2020-10-28 16:46:28,074 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[{"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874788042,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 16:47:07,254 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-consumer] services are automatically cleaned
+
+2020-10-28 16:47:07,319 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603874684568,"checksum":"c7d92d3dd7785df113d5f3cc6afc0332","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 16:47:09,570 INFO creating empty service public:DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 16:47:09,580 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603874829572,"checksum":"8711374c4620fc573636c100083f0e21","clusterMap":{},"empty":true}
+
+2020-10-28 16:47:09,583 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874829570,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-10-28 16:47:09,583 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874829570,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 16:48:31,593 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-user, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874878206,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 16:48:31,593 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[]}
+
+2020-10-28 16:48:34,651 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603874884633,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 16:48:34,651 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 16:50:37,257 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-user] services are automatically cleaned
+
+2020-10-28 16:50:37,257 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-consumer] services are automatically cleaned
+
+2020-10-28 16:50:37,257 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603874911593,"checksum":"43288c3e0baeb9f9eb9bd9d257845f8c","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-user","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 16:50:37,257 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603874914651,"checksum":"c7d92d3dd7785df113d5f3cc6afc0332","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 16:59:04,449 INFO creating empty service public:DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 16:59:04,450 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603875544449,"checksum":"6f7de75d47196daae21a03fbb17ebf61","clusterMap":{},"empty":true}
+
+2020-10-28 16:59:04,450 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603875544449,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-10-28 16:59:04,450 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[{"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603875544449,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 16:59:39,478 INFO creating empty service public:DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 16:59:39,478 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603875579478,"checksum":"8711374c4620fc573636c100083f0e21","clusterMap":{},"empty":true}
+
+2020-10-28 16:59:39,479 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603875579477,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-10-28 16:59:39,479 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603875579477,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 17:08:29,601 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-user, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603876075030,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 17:08:29,616 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603876074986,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 17:08:29,664 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 17:08:29,664 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[]}
+
+2020-10-28 17:10:37,252 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-user] services are automatically cleaned
+
+2020-10-28 17:10:37,283 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-consumer] services are automatically cleaned
+
+2020-10-28 17:10:37,283 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603876109664,"checksum":"43288c3e0baeb9f9eb9bd9d257845f8c","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-user","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 17:10:37,283 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603876109664,"checksum":"c7d92d3dd7785df113d5f3cc6afc0332","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 17:15:21,042 INFO creating empty service public:DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 17:15:21,069 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603876521044,"checksum":"6f7de75d47196daae21a03fbb17ebf61","clusterMap":{},"empty":true}
+
+2020-10-28 17:15:21,079 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603876521004,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-10-28 17:15:21,083 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[{"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603876521004,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 17:16:03,700 INFO creating empty service public:DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 17:16:03,702 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603876563700,"checksum":"8711374c4620fc573636c100083f0e21","clusterMap":{},"empty":true}
+
+2020-10-28 17:16:03,702 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603876563700,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-10-28 17:16:03,702 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603876563700,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 17:17:33,742 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603876618955,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 17:17:33,863 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 17:17:43,019 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603876662996,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 17:19:28,847 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603876738192,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 17:19:28,854 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 17:19:50,105 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603876790104,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 17:24:03,935 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603877010566,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 17:24:04,055 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 17:24:20,415 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603877060380,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 17:33:39,147 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603877586424,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 17:33:39,255 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 17:34:24,478 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603877664448,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 17:58:32,633 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 17:58:36,241 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 17:58:46,260 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 17:58:46,623 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-user, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879091632,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 17:58:46,769 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[]}
+
+2020-10-28 17:59:17,321 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[{"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879157286,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 17:59:49,555 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879156712,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 17:59:49,601 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 18:00:02,800 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879202797,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 18:01:19,138 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 18:01:19,361 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[{"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879279360,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 18:01:20,252 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 18:01:20,363 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-consumer
+
+2020-10-28 18:03:12,891 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 18:03:18,381 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 18:03:26,898 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-user, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879372824,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 18:03:26,992 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[]}
+
+2020-10-28 18:03:49,294 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[{"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879429283,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 18:06:18,048 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 18:06:18,532 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 18:06:28,543 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@nacos-seata-user
+
+2020-10-28 18:06:32,073 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-user, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879559489,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 18:06:32,089 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[]}
+
+2020-10-28 18:06:52,763 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[{"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879612762,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-10-28 18:13:04,951 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-consumer, ip: {"instanceId":"192.168.181.1#80#DEFAULT#DEFAULT_GROUP@@nacos-seata-consumer","ip":"192.168.181.1","port":80,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879950526,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 18:13:04,998 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
+
+2020-10-28 18:13:07,248 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@nacos-seata-user, ip: {"instanceId":"192.168.181.1#7001#DEFAULT#DEFAULT_GROUP@@nacos-seata-user","ip":"192.168.181.1","port":7001,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-seata-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1603879953257,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-10-28 18:13:07,248 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-user, value: {"instanceList":[]}
+
+2020-10-28 18:15:07,262 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-user] services are automatically cleaned
+
+2020-10-28 18:15:07,294 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-consumer] services are automatically cleaned
+
+2020-10-28 18:15:07,325 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603879987248,"checksum":"43288c3e0baeb9f9eb9bd9d257845f8c","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-user","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 18:15:07,325 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603879984998,"checksum":"c7d92d3dd7785df113d5f3cc6afc0332","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+

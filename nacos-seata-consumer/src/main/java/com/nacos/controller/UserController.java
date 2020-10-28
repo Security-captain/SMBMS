@@ -42,6 +42,10 @@ public class UserController {
             model.addAttribute("Current",mp.get("Current"));
             model.addAttribute("Pages",mp.get("Pages"));
             model.addAttribute("Records",mp.get("Records"));
+        }else if("view".equals(mp.get("method"))){
+
+        }else if("modify".equals(mp.get("method"))){
+
         }
         return "user";
     }

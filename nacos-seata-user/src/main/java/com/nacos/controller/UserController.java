@@ -25,13 +25,23 @@ public class UserController {
     @GetMapping("/user")
     public String user(@RequestParam Map<String,Object> mp){
         if("query".equals(mp.get("method"))){
-            Page<User> page =new Page<>(1,5);
-            IPage<User> iPage= userService.page(page,null);
-            mp.put("Total",iPage.getTotal());
-            mp.put("Current",iPage.getCurrent());
-            mp.put("Pages",iPage.getPages());
-            mp.put("Records",iPage.getRecords());
-            return JSON.toJSONString(mp);
+            if(mp.get("pageIndex")!=null){
+                Page<User> page =new Page<>(Integer.parseInt(mp.get("pageIndex").toString()),5);
+                IPage<User> iPage= userService.page(page,null);
+                mp.put("Total",iPage.getTotal());
+                mp.put("Current",iPage.getCurrent());
+                mp.put("Pages",iPage.getPages());
+                mp.put("Records",iPage.getRecords());
+                return JSON.toJSONString(mp);
+            }else{
+                Page<User> page =new Page<>(1,5);
+                IPage<User> iPage= userService.page(page,null);
+                mp.put("Total",iPage.getTotal());
+                mp.put("Current",iPage.getCurrent());
+                mp.put("Pages",iPage.getPages());
+                mp.put("Records",iPage.getRecords());
+                return JSON.toJSONString(mp);
+            }
         }
         return "";
     }
