@@ -13,7 +13,7 @@
         <h1>超市订单管理系统</h1>
         <div class="publicHeaderR">
             <p><span>下午好！</span><span style="color: #fff21b"> 系统管理员</span> , 欢迎你！</p>
-            <a href="/logout">退出</a>
+            <a th:href="@{'/logout'}">退出</a>
         </div>
     </header>
 <!--时间-->
@@ -27,11 +27,11 @@
          <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
          <nav>
              <ul class="list">
-                 <li><a href="/bill.html">订单管理</a></li>
-                 <li><a href="/provider.html">供应商管理</a></li>
-                 <li><a href="/user.html">用户管理</a></li>
-                 <li><a href="/pwdmodify.html">密码修改</a></li>
-                 <li><a href="/logout">退出系统</a></li>
+                 <li><a th:href="@{'/bill.html'}">订单管理</a></li>
+                 <li><a th:href="@{'/provider.html'}">供应商管理</a></li>
+                 <li><a th:href="@{'/user?method=query'}">用户管理</a></li>
+                 <li><a th:href="@{'/pwdmodify.html'}">密码修改</a></li>
+                 <li><a th:href="@{'/logout'}">退出系统</a></li>
              </ul>
          </nav>
      </div>

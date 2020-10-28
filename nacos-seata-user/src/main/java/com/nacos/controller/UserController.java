@@ -9,6 +9,7 @@ import com.nacos.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -17,14 +18,14 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/login")
-    public int login(@RequestParam("userCode") String userCode,@RequestParam("userPassword") String userPassword){
+    public int login(String userCode,String userPassword){
         return userService.count(new QueryWrapper<User>().eq("userCode",userCode).eq("userPassword",userPassword));
     }
 
     @GetMapping("/user")
     public String user(@RequestParam Map<String,Object> mp){
         if("query".equals(mp.get("method"))){
-            Page<User> page =new Page<>(1,5,false);
+            Page<User> page =new Page<>(1,5);
             IPage<User> iPage= userService.page(page,null);
             mp.put("Total",iPage.getTotal());
             mp.put("Current",iPage.getCurrent());
