@@ -1,0 +1,405 @@
+Client: nacos-seata-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=nacos-seata-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+Using serverListUpdater PollingServerListUpdater
+Flipping property: nacos-seata-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+DynamicServerListLoadBalancer for client nacos-seata-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=nacos-seata-user,current list of Servers=[192.168.181.1:7001],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.181.1:7001;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@64914d76
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@41300182 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@667138a9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@16f589b9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3f9745af (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@76b210ab (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@19e9caa4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@236b3061 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2654b39e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4005d8b7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@17ee96f9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+Flipping property: nacos-seata-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+No active profile set, falling back to default profiles: default
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+BeanFactory id=d0937f21-1916-3c4f-8890-4f8340fbfe0a
+Tomcat initialized with port(s): 80 (http)
+Initializing ProtocolHandler ["http-nio-80"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.38]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 7070 ms
+No URLs will be polled as dynamic configuration sources.
+To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+No URLs will be polled as dynamic configuration sources.
+To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+Starting ProtocolHandler ["http-nio-80"]
+Tomcat started on port(s): 80 (http) with context path ''
+nacos registry, DEFAULT_GROUP nacos-seata-consumer 192.168.181.1:80 register finished
+Started NacosConsumerApplication in 16.072 seconds (JVM running for 24.338)
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 7 ms
+Flipping property: nacos-seata-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+Client: nacos-seata-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=nacos-seata-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+Using serverListUpdater PollingServerListUpdater
+Flipping property: nacos-seata-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+DynamicServerListLoadBalancer for client nacos-seata-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=nacos-seata-user,current list of Servers=[192.168.181.1:7001],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.181.1:7001;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@6bfdca74
+Flipping property: nacos-seata-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6e9218c0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s797ms195?s100ns).
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+No active profile set, falling back to default profiles: default
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+BeanFactory id=d0937f21-1916-3c4f-8890-4f8340fbfe0a
+Tomcat initialized with port(s): 80 (http)
+Initializing ProtocolHandler ["http-nio-80"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.38]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 7676 ms
+No URLs will be polled as dynamic configuration sources.
+To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+No URLs will be polled as dynamic configuration sources.
+To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+Cannot determine local hostname
+Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+Cannot determine local hostname
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+Starting ProtocolHandler ["http-nio-80"]
+Tomcat started on port(s): 80 (http) with context path ''
+nacos registry, DEFAULT_GROUP nacos-seata-consumer 192.168.181.1:80 register finished
+Cannot determine local hostname
+Started NacosConsumerApplication in 24.167 seconds (JVM running for 33.092)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 42 ms
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+Flipping property: nacos-seata-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+Client: nacos-seata-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=nacos-seata-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+Using serverListUpdater PollingServerListUpdater
+Flipping property: nacos-seata-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+DynamicServerListLoadBalancer for client nacos-seata-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=nacos-seata-user,current list of Servers=[192.168.181.1:7001],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.181.1:7001;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@4379bff9
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@26040ab0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f275950 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2f83e110 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@29543fda (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6b47335f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@ecf0abe (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3e74e116 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@36d6a3ed (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6459b3a3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@12b5df6c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+Flipping property: nacos-seata-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.RetryableException: Read timed out executing POST http://nacos-seata-user/login?userCode=admin&userPassword=1234567] with root cause
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:981)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:754)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1623)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1528)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at feign.Client$Default.convertResponse(Client.java:108)
+	at feign.Client$Default.execute(Client.java:104)
+	at org.springframework.cloud.openfeign.ribbon.FeignLoadBalancer.execute(FeignLoadBalancer.java:93)
+	at org.springframework.cloud.openfeign.ribbon.FeignLoadBalancer.execute(FeignLoadBalancer.java:56)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:119)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at com.sun.proxy.$Proxy73.login(Unknown Source)
+	at com.nacos.controller.UserController.login(UserController.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct
+no available service 'null' found, please make sure registry config correct

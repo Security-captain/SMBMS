@@ -6,27 +6,22 @@
     <link rel="icon" th:href="@{/img/buy.png}" type="image/x-icon"/>
     <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}"/>
     <link type="text/css" rel="stylesheet" th:href="@{/css/public.css}"/>
-    <script type="text/javascript">
-        $(function () {
-            function jump_to(){
-                var regexp=/^[1-9]\d*$/;
-                var totalPageCount = document.getElementById("totalPageCount").value;
-                if(!regexp.test(num)){
-                    alert("请输入大于0的正整数！");
-                    return false;
-                }else if((num-totalPageCount) > 0){
-                    alert("请输入小于总页数的页码");
-                    return false;
-                }else{
-                    $.get('user', {
-                        'method': 'query',
-                        'queryname': [name = 'queryname'].val(),
-                        'queryUserRole': [name = 'queryUserRole'].val(),
-                        'pageIndex':[name='inputPage'].val()
-                    })
-                }
+    <script type="text/javascript" th:inline="javascript">
+        function jump_to(){
+            var num=document.getElementById("inputPage").value;
+            var regexp=/^[1-9]\d*$/;
+            var totalPageCount = document.getElementById("totalPageCount").value;
+            if(!regexp.test(num)){
+                alert("请输入大于0的正整数！");
+                return false;
+            }else if((num-totalPageCount) > 0){
+                alert("请输入小于总页数的页码");
+                return false;
+            }else{
+                window.location.href='/user?method=query&pageIndex='+num
+                return true;
             }
-        })
+        }
     </script>
 </head>
 <body>
@@ -157,8 +152,7 @@
             </ul>
             <span class="page-go-form"><label>跳转至</label>
 	     <input type="text" name="inputPage" id="inputPage" class="page-key"/>页
-	     <button type="button" class="page-btn"
-                 onClick='jump_to()'>GO</button>
+	     <button type="button" class="page-btn" onclick="jump_to()">GO</button>
 		</span>
         </div>
         </body>

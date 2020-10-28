@@ -368,3 +368,195 @@
 
 2020-10-28 18:13:07,248 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-user, ips: 
 
+2020-10-28 19:31:56,122 INFO DEFAULT_GROUP@@nacos-seata-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:7001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 19:31:56,127 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-user, ips: 192.168.181.1:7001_true,
+
+2020-10-28 19:32:47,558 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 19:32:47,558 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 19:34:46,129 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:7001@DEFAULT@DEFAULT_GROUP@@nacos-seata-user, region: unknown, msg: client timeout after 15000, last beat: 1603884866266
+
+2020-10-28 19:35:01,249 INFO DEFAULT_GROUP@@nacos-seata-user {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:7001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 19:35:01,249 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-user, ips: 
+
+2020-10-28 19:35:12,165 INFO DEFAULT_GROUP@@nacos-seata-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:7001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 19:35:12,165 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-user, ips: 192.168.181.1:7001_true,
+
+2020-10-28 19:36:47,664 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603884987942
+
+2020-10-28 19:37:02,674 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 19:37:02,674 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 19:37:18,241 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 19:37:18,250 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 19:40:52,721 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603885233605
+
+2020-10-28 19:41:07,859 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 19:41:07,859 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 19:41:31,975 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 19:41:31,976 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 19:46:27,885 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603885572598
+
+2020-10-28 19:46:31,370 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:7001@DEFAULT@DEFAULT_GROUP@@nacos-seata-user, region: unknown, msg: client timeout after 15000, last beat: 1603885573477
+
+2020-10-28 19:46:43,254 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 19:46:43,254 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 19:46:46,400 INFO DEFAULT_GROUP@@nacos-seata-user {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:7001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 19:46:46,400 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-user, ips: 
+
+2020-10-28 19:52:46,258 INFO DEFAULT_GROUP@@nacos-seata-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:7001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 19:52:46,261 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-user, ips: 192.168.181.1:7001_true,
+
+2020-10-28 19:53:23,044 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 19:53:23,046 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 19:55:28,080 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603886108222
+
+2020-10-28 19:55:43,231 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 19:55:43,232 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 19:56:05,451 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 19:56:05,451 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:02:48,329 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603886551089
+
+2020-10-28 20:03:03,338 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:03:03,338 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 20:03:16,294 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:03:16,294 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:07:03,411 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603886806626
+
+2020-10-28 20:07:18,604 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:07:18,605 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 20:07:49,001 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:07:49,002 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:10:13,569 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603886994437
+
+2020-10-28 20:10:28,723 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:10:28,724 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 20:10:57,183 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:10:57,184 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:14:03,711 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603887227398
+
+2020-10-28 20:14:18,867 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:14:18,868 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 20:14:44,818 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:14:44,819 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:17:28,848 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603887430099
+
+2020-10-28 20:17:43,861 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:17:43,861 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 20:19:16,009 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:19:16,015 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:21:28,898 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603887671270
+
+2020-10-28 20:21:44,018 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:21:44,018 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 20:22:09,804 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:22:09,805 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:26:29,033 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603887970281
+
+2020-10-28 20:26:44,300 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:26:44,300 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 20:27:44,655 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:27:44,659 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:30:14,222 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603888194823
+
+2020-10-28 20:30:29,322 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:30:29,322 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 20:30:55,901 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:30:55,901 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:37:33,046 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603888581467
+
+2020-10-28 20:37:33,046 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:7001@DEFAULT@DEFAULT_GROUP@@nacos-seata-user, region: unknown, msg: client timeout after 15000, last beat: 1603888579721
+
+2020-10-28 20:37:33,974 INFO service: DEFAULT_GROUP@@nacos-seata-user {POS} {IP-ENABLED} valid: 192.168.181.1:7001@DEFAULT, region: unknown, msg: client beat ok
+
+2020-10-28 20:37:34,278 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:37:34,278 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 20:37:34,279 INFO DEFAULT_GROUP@@nacos-seata-user {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:7001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:37:34,279 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-user, ips: 
+
+2020-10-28 20:37:35,736 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:37:35,736 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:37:39,042 INFO DEFAULT_GROUP@@nacos-seata-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:7001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:37:39,042 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-user, ips: 192.168.181.1:7001_true,
+
+2020-10-28 20:43:39,224 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603889001385
+
+2020-10-28 20:43:54,418 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:43:54,419 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
+2020-10-28 20:44:26,630 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-10-28 20:44:26,631 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 192.168.181.1:80_true,
+
+2020-10-28 20:46:09,307 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:7001@DEFAULT@DEFAULT_GROUP@@nacos-seata-user, region: unknown, msg: client timeout after 15000, last beat: 1603889149949
+
+2020-10-28 20:46:09,397 INFO {POS} {IP-DISABLED} valid: 192.168.181.1:80@DEFAULT@DEFAULT_GROUP@@nacos-seata-consumer, region: unknown, msg: client timeout after 15000, last beat: 1603889151767
+
+2020-10-28 20:46:24,377 INFO DEFAULT_GROUP@@nacos-seata-user {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:7001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:46:24,377 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-user, ips: 
+
+2020-10-28 20:46:24,428 INFO DEFAULT_GROUP@@nacos-seata-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.181.1:80:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-10-28 20:46:24,428 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-seata-consumer, ips: 
+
