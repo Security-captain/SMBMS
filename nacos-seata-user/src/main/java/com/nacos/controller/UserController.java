@@ -28,7 +28,10 @@ public class UserController {
             if(mp.get("pageIndex")!=null){//pageIndex不为空
                 Page<User> page =new Page<>(Integer.parseInt(mp.get("pageIndex").toString()),5);
                 if(mp.get("queryname")!=null || Integer.parseInt(mp.get("queryUserRole").toString())>0){//条件分页查询
-                    IPage<User> iPage= userService.page(page,new QueryWrapper<>().eq("userCode",mp.get("queryname")));
+                    IPage<User> iPage= userService.page(
+                            page,new QueryWrapper<User>()
+                                    .eq("queryname",Integer.parseInt(mp.get("queryname").toString()))
+                                    .eq("queryUserRole",Integer.parseInt(mp.get("queryUserRole").toString())));
                     mp.put("Total",iPage.getTotal());
                     mp.put("Current",iPage.getCurrent());
                     mp.put("Pages",iPage.getPages());
