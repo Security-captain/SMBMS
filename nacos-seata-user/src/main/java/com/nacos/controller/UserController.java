@@ -18,7 +18,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/login")
-    public int login(String userCode,String userPassword){
+    public int login(@RequestParam("userCode") String userCode,@RequestParam("userPassword") String userPassword){
         return userService.count(new QueryWrapper<User>().eq("userCode",userCode).eq("userPassword",userPassword));
     }
 
