@@ -24,16 +24,25 @@ public class UserController {
 
     @GetMapping("/user")
     public String user(@RequestParam Map<String,Object> mp){
-        if("query".equals(mp.get("method"))){
-            if(mp.get("pageIndex")!=null){
+        if("query".equals(mp.get("method"))){//查询
+            if(mp.get("pageIndex")!=null){//pageIndex不为空
                 Page<User> page =new Page<>(Integer.parseInt(mp.get("pageIndex").toString()),5);
-                IPage<User> iPage= userService.page(page,null);
-                mp.put("Total",iPage.getTotal());
-                mp.put("Current",iPage.getCurrent());
-                mp.put("Pages",iPage.getPages());
-                mp.put("Records",iPage.getRecords());
-                return JSON.toJSONString(mp);
-            }else{
+                if(mp.get("queryname")!=null || mp.get("queryUserRole")!=null){//条件分页查询
+                    IPage<User> iPage= userService.page(page,new QueryWrapper<>().eq("userCode",mp.get("queryname")));
+                    mp.put("Total",iPage.getTotal());
+                    mp.put("Current",iPage.getCurrent());
+                    mp.put("Pages",iPage.getPages());
+                    mp.put("Records",iPage.getRecords());
+                    return JSON.toJSONString(mp);
+                }else{//无条件分页查询
+                    IPage<User> iPage= userService.page(page,null);
+                    mp.put("Total",iPage.getTotal());
+                    mp.put("Current",iPage.getCurrent());
+                    mp.put("Pages",iPage.getPages());
+                    mp.put("Records",iPage.getRecords());
+                    return JSON.toJSONString(mp);
+                }
+            }else{//默认分页查询
                 Page<User> page =new Page<>(1,5);
                 IPage<User> iPage= userService.page(page,null);
                 mp.put("Total",iPage.getTotal());

@@ -542,3 +542,11 @@
 
 2020-10-28 20:46:24,428 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-seata-consumer, value: {"instanceList":[]}
 
+2020-10-28 20:48:37,218 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-user] services are automatically cleaned
+
+2020-10-28 20:48:37,387 WARN namespace : public, [DEFAULT_GROUP@@nacos-seata-consumer] services are automatically cleaned
+
+2020-10-28 20:48:37,417 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603889184377,"checksum":"43288c3e0baeb9f9eb9bd9d257845f8c","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-user","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-10-28 20:48:37,417 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@nacos-seata-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1603889184428,"checksum":"c7d92d3dd7785df113d5f3cc6afc0332","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-seata-consumer","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
