@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
-import java.util.List;
+import java.util.Map;
 
 @Controller
 public class UserController {
@@ -35,10 +35,14 @@ public class UserController {
     }
 
     @GetMapping("/user")
-    public String user(@PathVariable int current, Model model){
-        List<User> userlist= JSONObject.parseArray(feignUserClient.user(current), User.class);
-        model.addAttribute("userlist",userlist);
-        model.addAttribute("current",current);
+    public String user(@RequestParam Map<String,Object> mp, Model model){
+        if("query".equals(mp.get("method"))){
+            mp= JSONObject.parseObject(feignUserClient.user(mp), Map.class);
+            model.addAttribute("Total",mp.get("Total"));
+            model.addAttribute("Current",mp.get("Current"));
+            model.addAttribute("Pages",mp.get("Pages"));
+            model.addAttribute("Records",mp.get("Records"));
+        }
         return "user";
     }
 

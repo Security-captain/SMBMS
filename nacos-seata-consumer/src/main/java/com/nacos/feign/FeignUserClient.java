@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
+import java.util.Map;
 
 @FeignClient(name = "nacos-seata-user")
 public interface FeignUserClient {
@@ -15,5 +16,5 @@ public interface FeignUserClient {
     int login(@RequestParam("userCode") String userCode, @RequestParam("userPassword") String userPassword);
 
     @GetMapping("/user")
-    String user(@PathVariable int current);
+    String user(@RequestParam Map<String,Object> map);
 }

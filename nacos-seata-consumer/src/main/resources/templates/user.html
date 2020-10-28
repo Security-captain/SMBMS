@@ -6,6 +6,28 @@
     <link rel="icon" th:href="@{/img/buy.png}" type="image/x-icon"/>
     <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}"/>
     <link type="text/css" rel="stylesheet" th:href="@{/css/public.css}"/>
+    <script type="text/javascript">
+        $(function () {
+            function jump_to(){
+                var regexp=/^[1-9]\d*$/;
+                var totalPageCount = document.getElementById("totalPageCount").value;
+                if(!regexp.test(num)){
+                    alert("请输入大于0的正整数！");
+                    return false;
+                }else if((num-totalPageCount) > 0){
+                    alert("请输入小于总页数的页码");
+                    return false;
+                }else{
+                    $.get('user', {
+                        'method': 'query',
+                        'queryname': [name = 'queryname'].val(),
+                        'queryUserRole': [name = 'queryUserRole'].val(),
+                        'pageIndex':[name='inputPage'].val()
+                    })
+                }
+            }
+        })
+    </script>
 </head>
 <body>
 <!--头部-->
@@ -79,7 +101,7 @@
                 <th width="10%">用户角色</th>
                 <th width="30%">操作</th>
             </tr>
-            <tr th:each="u:${userlist}">
+            <tr th:each="u:${Records}">
                 <td>
                     <span th:text="${u.userCode}">ww</span>
                 </td>
@@ -126,21 +148,20 @@
         <body>
         <div class="page-bar">
             <ul class="page-num-ul clearfix">
-                <li>共11条记录&nbsp;&nbsp; 1/3页</li>
-                <a href="/user.html?current=1">首页</a>
-                <a href="/user.html?current="+${current}-1>上一页</a>
-                <a href="/user.html?current="+${current}+1>下一页</a>
-                <a href="javascript:page_nav(document.forms[0],5);">最后一页</a>
+                <li th:text="'共'+${Total}+'条记录&nbsp;&nbsp; '+${Current}+'/'+${Pages}+'页'">共11条记录&nbsp;&nbsp; 1/3页</li>
+                <a href="javascript:void(0);">首页</a>
+                <a href="javascript:void(0);">上一页</a>
+                <a href="javascript:void(0);">下一页</a>
+                <a href="javascript:void(0);">最后一页</a>
                 &nbsp;&nbsp;
             </ul>
             <span class="page-go-form"><label>跳转至</label>
 	     <input type="text" name="inputPage" id="inputPage" class="page-key"/>页
 	     <button type="button" class="page-btn"
-                 onClick='jump_to(document.forms[0],document.getElementById("inputPage").value)'>GO</button>
+                 onClick='jump_to()'>GO</button>
 		</span>
         </div>
         </body>
-        <script type="text/javascript" th:href="@{/js/rollpage.js}"></script>
         </html>
     </div>
 </section>
