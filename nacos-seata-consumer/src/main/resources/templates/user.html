@@ -18,7 +18,9 @@
                 alert("请输入小于总页数的页码");
                 return false;
             }else{
-                window.location.href='/user?method=query&pageIndex='+num
+                window.location.href='/user?method=query&queryname='+document.getElementsByName("queryname")[0].value
+                                    +'&queryUserRole='+document.getElementsByName("queryUserRole")[0].value
+                                    +'&pageIndex='+num
                 return true;
             }
         }
@@ -63,22 +65,13 @@
             <form method="get" action="user">
                 <input name="method" value="query" class="input-text" type="hidden">
                 <span>用户名：</span>
-                <input name="queryname" class="input-text" type="text" value="">
+                <input name="queryname" class="input-text" type="text" th:value="${queryname}">
                 <span>用户角色：</span>
-                <select name="queryUserRole">
-                    <option value="0">--请选择--</option>
-
-                    <option
-                            value="1">系统管理员
-                    </option>
-
-                    <option
-                            value="2">经理
-                    </option>
-
-                    <option
-                            value="3">普通员工
-                    </option>
+                <select name="queryUserRole" th:value="${queryUserRole}">
+                    <option value="0" th:selected="${queryUserRole == '0'}">--请选择--</option>
+                    <option value="1" th:selected="${queryUserRole == '1'}">系统管理员</option>
+                    <option value="2" th:selected="${queryUserRole == '2'}">经理</option>
+                    <option value="3" th:selected="${queryUserRole == '3'}">普通员工</option>
                 </select>
                 <input type="hidden" name="pageIndex" value="1"/>
                 <input value="查 询" type="submit" id="searchbutton">
@@ -115,7 +108,9 @@
                     <span th:text="${u.phone}">13568749874</span>
                 </td>
                 <td>
-                    <span>经理</span>
+                    <span th:if="${u.userRole==1}">系统管理员</span>
+                    <span th:if="${u.userRole==2}">经理</span>
+                    <span th:if="${u.userRole==3}">普通员工</span>
                 </td>
                 <td>
                     <span><a class="viewUser" href="javascript:;" userid=16 username=王涵><img th:src="@{/img/read.png}"
@@ -144,10 +139,10 @@
         <div class="page-bar">
             <ul class="page-num-ul clearfix">
                 <li th:text="'共'+${Total}+'条记录&nbsp;&nbsp; '+${Current}+'/'+${Pages}+'页'">共11条记录&nbsp;&nbsp; 1/3页</li>
-                <a th:href="@{'/user?method=query&pageIndex=1'}">首页</a>
-                <a th:href="@{'/user?method=query&pageIndex='+${Current-1}}">上一页</a>
-                <a th:href="@{'/user?method=query&pageIndex='+${Current+1}}">下一页</a>
-                <a th:href="@{'/user?method=query&pageIndex='+${Pages}}">最后一页</a>
+                <a th:href="@{'/user?method=query&queryname='+${queryname}+'&queryUserRole='+${queryUserRole}+'&pageIndex=1'}">首页</a>
+                <a th:href="@{'/user?method=query&queryname='+${queryname}+'&queryUserRole='+${queryUserRole}+'&pageIndex='+${Current-1}}">上一页</a>
+                <a th:href="@{'/user?method=query&queryname='+${queryname}+'&queryUserRole='+${queryUserRole}+'&pageIndex='+${Current+1}}">下一页</a>
+                <a th:href="@{'/user?method=query&queryname='+${queryname}+'&queryUserRole='+${queryUserRole}+'&pageIndex='+${Pages}}">最后一页</a>
                 &nbsp;&nbsp;
             </ul>
             <span class="page-go-form"><label>跳转至</label>

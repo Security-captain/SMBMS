@@ -27,17 +27,35 @@ public class UserController {
         if("query".equals(mp.get("method"))){//查询
             if(mp.get("pageIndex")!=null){//pageIndex不为空
                 Page<User> page =new Page<>(Integer.parseInt(mp.get("pageIndex").toString()),5);
-                if(mp.get("queryname")!=null || Integer.parseInt(mp.get("queryUserRole").toString())>0){//条件分页查询
+                if(mp.get("queryname")!="" && Integer.parseInt(mp.get("queryUserRole").toString())>0){//条件分页查询 queryname queryUserRole都不为空
                     IPage<User> iPage= userService.page(
                             page,new QueryWrapper<User>()
-                                    .eq("queryname",Integer.parseInt(mp.get("queryname").toString()))
-                                    .eq("queryUserRole",Integer.parseInt(mp.get("queryUserRole").toString())));
+                                    .like("userName",mp.get("queryname").toString())
+                                    .eq("userRole",Integer.parseInt(mp.get("queryUserRole").toString())));
                     mp.put("Total",iPage.getTotal());
                     mp.put("Current",iPage.getCurrent());
                     mp.put("Pages",iPage.getPages());
                     mp.put("Records",iPage.getRecords());
                     return JSON.toJSONString(mp);
-                }else{//无条件分页查询
+                }else if(mp.get("queryname")!="" && Integer.parseInt(mp.get("queryUserRole").toString())<=0){//条件分页查询 queryUserRole为空
+                    IPage<User> iPage= userService.page(
+                            page,new QueryWrapper<User>()
+                                    .like("userName",mp.get("queryname").toString()));
+                    mp.put("Total",iPage.getTotal());
+                    mp.put("Current",iPage.getCurrent());
+                    mp.put("Pages",iPage.getPages());
+                    mp.put("Records",iPage.getRecords());
+                    return JSON.toJSONString(mp);
+                }else if(mp.get("queryname")=="" && Integer.parseInt(mp.get("queryUserRole").toString())>0){//条件分页查询 queryname为空
+                    IPage<User> iPage= userService.page(
+                            page,new QueryWrapper<User>()
+                                    .eq("userRole",Integer.parseInt(mp.get("queryUserRole").toString())));
+                    mp.put("Total",iPage.getTotal());
+                    mp.put("Current",iPage.getCurrent());
+                    mp.put("Pages",iPage.getPages());
+                    mp.put("Records",iPage.getRecords());
+                    return JSON.toJSONString(mp);
+                }else{//无条件分页查询  queryname queryUserRoled都为空
                     IPage<User> iPage= userService.page(page,null);
                     mp.put("Total",iPage.getTotal());
                     mp.put("Current",iPage.getCurrent());
