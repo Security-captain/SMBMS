@@ -9,7 +9,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigInteger;
-import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,7 +26,7 @@ public class User {
     @TableField(value = "gender")
     private Integer gender;
     @TableField(value = "birthday")
-    private Date birthday;
+    private String birthday;
     @TableField(value = "phone")
     private String phone;
     @TableField(value = "address")
@@ -37,9 +36,9 @@ public class User {
     @TableField(value = "createdBy")
     private BigInteger createdBy;
     @TableField(value = "creationDate")
-    private Date creationDate;
+    private String creationDate;
     @TableField(value = "modifyBy")
     private BigInteger modifyBy;
     @TableField(value = "modifyDate")
-    private Date modifyDate;
+    private String modifyDate;
 }

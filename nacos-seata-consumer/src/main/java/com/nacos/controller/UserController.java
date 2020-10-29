@@ -51,7 +51,9 @@ public class UserController {
             model.addAttribute("user",mp.get("user"));
             return "userview";
         }else if("modify".equals(mp.get("method"))){
-
+            mp= JSONObject.parseObject(feignUserClient.user(mp), Map.class);
+            model.addAttribute("user",mp.get("user"));
+            return "usermodify";
         }
         return "user";
     }

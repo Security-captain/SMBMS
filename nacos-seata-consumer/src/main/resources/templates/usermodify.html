@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>超市订单管理系统</title>
+    <link rel="icon" th:href="@{/img/buy.png}" type="image/x-icon"/>
+    <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link type="text/css" rel="stylesheet" th:href="@{/css/public.css}"/>
+    <script type="text/javascript" th:inline="javascript">
+        function back(){
+            window.history.back()
+        }
+    </script>
+</head>
+<body>
+<!--头部-->
+<header class="publicHeader">
+    <h1>超市订单管理系统</h1>
+    <div class="publicHeaderR">
+        <p><span>下午好！</span><span style="color: #fff21b"> 蔡徐坤</span> , 欢迎你！</p>
+        <a href="/SMBMS/jsp/logout.do">退出</a>
+    </div>
+</header>
+<!--时间-->
+<section class="publicTime">
+    <span id="time">2015年1月1日 11:11  星期一</span>
+    <a href="#">温馨提示：为了能正常浏览，请使用高版本浏览器！（IE10+）</a>
+</section>
+<!--主体内容-->
+<section class="publicMian ">
+    <div class="left">
+        <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
+        <nav>
+            <ul class="list">
+                <li><a th:href="@{'/bill.html'}">订单管理</a></li>
+                <li><a th:href="@{'/provider.html'}">供应商管理</a></li>
+                <li><a th:href="@{'/user?method=query'}">用户管理</a></li>
+                <li><a th:href="@{'/pwdmodify.html'}">密码修改</a></li>
+                <li><a th:href="@{'/logout'}">退出系统</a></li>
+            </ul>
+        </nav>
+    </div>
+    <input type="hidden" id="path" name="path" value="/SMBMS"/>
+    <input type="hidden" id="referer" name="referer" value="http://www.startym.top/SMBMS/jsp/user.do?method=query"/>
+    <div class="right">
+        <div class="location">
+            <strong>你现在所在的位置是:</strong>
+            <span>用户管理页面 >> 用户修改页面</span>
+        </div>
+        <div class="providerAdd">
+            <form th:object="${user}" id="userForm" name="userForm" method="post" action="user">
+                <input type="hidden" name="method" value="modifyexe">
+                <input type="hidden" name="uid" th:value="${user.id}"/>
+                <div>
+                    <label for="userName">用户名称：</label>
+                    <input type="text" name="userName" id="userName" th:value="${user.userName}">
+                    <font color="red"></font>
+                </div>
+                <div>
+                    <label >用户性别：</label>
+                    <select name="gender" id="gender">
+                        <option value="1" th:selected="${user.gender == 1}">男</option>
+                        <option value="2" th:selected="${user.gender == 2}">女</option>
+                    </select>
+                </div>
+                <div>
+                    <label>出生日期：</label>
+                    <input type="text" Class="Wdate" id="birthday" name="birthday" th:value="${user.birthday}"
+                           readonly="readonly" onclick="WdatePicker();">
+                    <font color="red"></font>
+                </div>
+
+                <div>
+                    <label>用户电话：</label>
+                    <input type="text" name="phone" id="phone" th:value="${user.phone}">
+                    <font color="red"></font>
+                </div>
+                <div>
+                    <label>用户地址：</label>
+                    <input type="text" name="address" id="address" th:value="${user.address}">
+                </div>
+                <div>
+                    <label >用户角色：</label>
+                    <select name="queryUserRole" th:value="${user.userRole}">
+                        <option value="0">--请选择--</option>
+                        <option value="1" th:selected="${user.userRole == 1}">系统管理员</option>
+                        <option value="2" th:selected="${user.userRole == 2}">经理</option>
+                        <option value="3" th:selected="${user.userRole == 3}">普通员工</option>
+                    </select>
+                </div>
+                <div class="providerAddBtn">
+                    <input type="button" name="save" id="save" value="保存" />
+                    <input type="button" id="back" name="back" value="返回" onclick="back()"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    版权归北大青鸟
+</footer>
+<script type="text/javascript" th:src="@{/js/time.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery-3.5.1.js}"></script>
+<script type="text/javascript" th:src="@{/js/common.js}"></script>
+<script type="text/javascript" th:src="@{/calendar/WdatePicker.js}"></script>
+<script type="text/javascript" th:src="@{/js/userlist.js}"></script>
+</body>
+</html>

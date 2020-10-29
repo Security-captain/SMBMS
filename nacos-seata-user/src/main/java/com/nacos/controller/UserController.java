@@ -79,7 +79,21 @@ public class UserController {
             User user=userService.getOne(new QueryWrapper<User>().eq("id",mp.get("uid")));
             mp.put("user",user);
             return JSON.toJSONString(mp);
+        }else if("modify".equals(mp.get("method"))){//查详情
+            User user=userService.getOne(new QueryWrapper<User>().eq("id",mp.get("uid")));
+            mp.put("user",user);
+            return JSON.toJSONString(mp);
         }
         return "";
+    }
+
+    @PostMapping("/user")
+    public String user(String method,User user){
+        if("modifyexe".equals(method)){
+
+        }else {
+            return "user";
+        }
+        return "user";
     }
 }
