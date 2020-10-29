@@ -8548,3 +8548,15 @@
 
 2020-10-29 12:27:24,856 INFO toNotifyTaskSize = 0
 
+2020-10-29 12:27:34,740 INFO [long-pulling] client count 0
+
+2020-10-29 12:27:34,772 INFO groupCount = 80, subscriberClientCount = 0, subscriberCount = 0
+
+2020-10-29 12:27:34,860 INFO toNotifyTaskSize = 0
+
+2020-10-29 12:27:44,742 INFO [long-pulling] client count 0
+
+2020-10-29 12:27:44,774 INFO groupCount = 80, subscriberClientCount = 0, subscriberCount = 0
+
+2020-10-29 12:27:44,862 INFO toNotifyTaskSize = 0
+
