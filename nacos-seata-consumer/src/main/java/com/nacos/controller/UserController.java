@@ -3,12 +3,10 @@ package com.nacos.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.nacos.feign.FeignUserClient;
 import com.nacos.pojo.User;
+import org.springframework.cloud.openfeign.SpringQueryMap;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.Map;
@@ -56,6 +54,16 @@ public class UserController {
             return "usermodify";
         }
         return "user";
+    }
+
+    @PostMapping("/user")
+    public String user(@RequestParam("method") String method,@SpringQueryMap User user){
+        if("modifyexe".equals(method)){
+            feignUserClient.user(method,user);
+            return "redirect:/user?method=query";
+        }else{
+            return "frame";
+        }
     }
 
     @GetMapping("/useradd")
