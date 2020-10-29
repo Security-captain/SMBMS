@@ -3636,3 +3636,7 @@
 
 2020-10-29 12:01:03,752 INFO leader timeout, start voting,leader: {"ip":"192.168.181.1:8848","voteFor":"192.168.181.1:8848","term":8777,"leaderDueMs":19992,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8777
 
+2020-10-29 12:01:23,756 INFO leader timeout, start voting,leader: {"ip":"192.168.181.1:8848","voteFor":"192.168.181.1:8848","term":8778,"leaderDueMs":17662,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8778
+
+2020-10-29 12:01:41,755 INFO leader timeout, start voting,leader: {"ip":"192.168.181.1:8848","voteFor":"192.168.181.1:8848","term":8779,"leaderDueMs":15210,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8779
+
