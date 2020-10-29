@@ -113,13 +113,21 @@
                     <span th:if="${u.userRole==3}">普通员工</span>
                 </td>
                 <td>
-                    <span><a class="viewUser" href="javascript:;" userid=16 username=王涵><img th:src="@{/img/read.png}"
-                                                                                             alt="查看"
-                                                                                             title="查看"/></a></span>
-                    <span><a class="modifyUser" href="javascript:;" userid=16 username=王涵><img
-                            th:src="@{/img/xiugai.png}" alt="修改" title="修改"/></a></span>
-                    <span><a class="deleteUser" href="javascript:;" userid=16 username=王涵><img th:src="@{/img/schu.png}"
-                                                                                               alt="删除" title="删除"/></a></span>
+                    <span>
+                        <a class="viewUser" th:href="@{'/user?method=view&uid='+${u.id}}">
+                            <img th:src="@{/img/read.png}" alt="查看" title="查看"/>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="modifyUser" href="">
+                            <img th:src="@{/img/xiugai.png}" alt="修改" title="修改"/>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="deleteUser" href="">
+                            <img th:src="@{/img/schu.png}" alt="删除" title="删除"/>
+                        </a>
+                    </span>
                 </td>
             </tr>
         </table>

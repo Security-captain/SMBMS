@@ -38,15 +38,18 @@ public class UserController {
     public String user(@RequestParam Map<String,Object> mp, Model model){
         if("query".equals(mp.get("method"))){
             mp= JSONObject.parseObject(feignUserClient.user(mp), Map.class);
+            model.addAttribute("queryname",mp.get("queryname"));
+            model.addAttribute("queryUserRole",mp.get("queryUserRole"));
+
             model.addAttribute("Total",mp.get("Total"));
             model.addAttribute("Current",mp.get("Current"));
             model.addAttribute("Pages",mp.get("Pages"));
             model.addAttribute("Records",mp.get("Records"));
-
-            model.addAttribute("queryname",mp.get("queryname"));
-            model.addAttribute("queryUserRole",mp.get("queryUserRole"));
+            return "user";
         }else if("view".equals(mp.get("method"))){
-
+            mp= JSONObject.parseObject(feignUserClient.user(mp), Map.class);
+            model.addAttribute("user",mp.get("user"));
+            return "userview";
         }else if("modify".equals(mp.get("method"))){
 
         }

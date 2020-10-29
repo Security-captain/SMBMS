@@ -66,12 +66,19 @@ public class UserController {
             }else{//默认分页查询
                 Page<User> page =new Page<>(1,5);
                 IPage<User> iPage= userService.page(page,null);
+                mp.put("queryname","");
+                mp.put("queryUserRole",0);
+
                 mp.put("Total",iPage.getTotal());
                 mp.put("Current",iPage.getCurrent());
                 mp.put("Pages",iPage.getPages());
                 mp.put("Records",iPage.getRecords());
                 return JSON.toJSONString(mp);
             }
+        }else if("view".equals(mp.get("method"))){//查详情
+            User user=userService.getOne(new QueryWrapper<User>().eq("id",mp.get("uid")));
+            mp.put("user",user);
+            return JSON.toJSONString(mp);
         }
         return "";
     }
