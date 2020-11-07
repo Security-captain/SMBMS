@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../gradle-6.8-milestone-2" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/nacos-gateway" />
+            <option value="$PROJECT_DIR$/nacos-model" />
+            <option value="$PROJECT_DIR$/nacos-seata-bill" />
+            <option value="$PROJECT_DIR$/nacos-seata-consumer" />
+            <option value="$PROJECT_DIR$/nacos-seata-provider" />
+            <option value="$PROJECT_DIR$/nacos-seata-user" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+    <option name="offlineMode" value="true" />
+  </component>
+</project>

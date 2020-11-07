@@ -5,13 +5,14 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.SpringQueryMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
 
 @FeignClient(name = "nacos-seata-user")
 public interface FeignUserClient {
+
+
 
     @PostMapping("/login")
     int login(@RequestParam("userCode") String userCode, @RequestParam("userPassword") String userPassword);

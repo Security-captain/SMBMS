@@ -1,0 +1,65 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.5.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+}
+
+group = 'com.nacos'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '15'
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    //自定义
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    //自动生成
+    mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
+    maven { url 'https://repo.spring.io/snapshot' }
+}
+
+ext {
+    SpringCloudAlibabaVersion = '2.2.3.RELEASE'
+    SpringCloudVersion='Hoxton.SR8'
+}
+
+dependencies {
+    compile project(':nacos-model')
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    implementation group: 'com.alibaba.cloud', name: 'spring-cloud-starter-alibaba-nacos-discovery'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.apache.shiro:shiro-spring-boot-web-starter:1.7.0'
+    implementation 'com.github.theborakompanioni:thymeleaf-extras-shiro:2.0.0'
+    implementation 'org.crazycake:shiro-redis:3.3.1'
+    implementation group: 'com.alibaba.cloud', name: 'spring-cloud-alibaba-seata', version: '2.2.0.RELEASE'
+    implementation group: 'com.alibaba', name: 'druid', version: '1.2.2'
+    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.74'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${SpringCloudVersion}"
+        mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${SpringCloudAlibabaVersion}"
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

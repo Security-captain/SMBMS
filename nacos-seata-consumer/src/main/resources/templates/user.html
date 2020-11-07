@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
 <head lang="en">
     <meta charset="UTF-8">
     <title>超市订单管理系统</title>
@@ -75,7 +75,7 @@
                 </select>
                 <input type="hidden" name="pageIndex" value="1"/>
                 <input value="查 询" type="submit" id="searchbutton">
-                <a href="/useradd.html">添加用户</a>
+                <a shiro:hasRole="1" th:href="@{'/useradd.html'}">添加用户</a>
             </form>
         </div>
         <!--用户-->
@@ -118,12 +118,12 @@
                     </span>
                     <span>
                         <a class="modifyUser" th:href="@{'/user?method=modify&uid='+${u.id}}">
-                            <img th:src="@{/img/xiugai.png}" alt="修改" title="修改"/>
+                            <img shiro:hasRole="admin" th:src="@{/img/xiugai.png}" alt="修改" title="修改"/>
                         </a>
                     </span>
                     <span>
                         <a class="deleteUser" href="">
-                            <img th:src="@{/img/schu.png}" alt="删除" title="删除"/>
+                            <img shiro:hasRole="admin" th:src="@{/img/schu.png}" alt="删除" title="删除"/>
                         </a>
                     </span>
                 </td>

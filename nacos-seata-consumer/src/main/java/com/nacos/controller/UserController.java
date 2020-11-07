@@ -3,6 +3,12 @@ package com.nacos.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.nacos.feign.FeignUserClient;
 import com.nacos.pojo.User;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.IncorrectCredentialsException;
+import org.apache.shiro.authc.UnknownAccountException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.annotation.RequiresRoles;
+import org.apache.shiro.subject.Subject;
 import org.springframework.cloud.openfeign.SpringQueryMap;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,9 +26,20 @@ public class UserController {
     public String login(@RequestParam("userCode") String userCode,@RequestParam("userPassword") String userPassword,Model model){
         int count=feignUserClient.login(userCode,userPassword);
         if (count==1){
-            return "frame";
+            try {
+                Subject subject = SecurityUtils.getSubject();
+                UsernamePasswordToken token = new UsernamePasswordToken(userCode, userPassword);
+                subject.login(token);
+                return "frame";
+            } catch (UnknownAccountException e) {
+                model.addAttribute("error", "用户不存在");
+                return "login";
+            } catch (IncorrectCredentialsException e) {
+                //密码不正确
+                model.addAttribute("error", "密码不正确");
+                return "login";
+            }
         }else {
-            model.addAttribute("error","用户名或密码不正确");
             return "login";
         }
     }
@@ -67,6 +84,7 @@ public class UserController {
     }
 
     @GetMapping("/useradd")
+    @RequiresRoles("admin")
     public String useradd(){
         return "useradd";
     }

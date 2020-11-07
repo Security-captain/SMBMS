@@ -10,3 +10,27 @@ spring:
   thymeleaf:
     encoding: utf-8
     cache: false
+shiro:
+  perms:
+    - url: /js/**
+      permission: anon
+    - url: /index
+      permission: anon
+    - url: /regist
+      permission: anon
+    - url: /login
+      permission: anon
+    - url: /logout
+      permission: logout
+    #    - url: /add
+    #      permission: roles[admins]
+    #    - url: /update
+    #      permission: roles[manager]
+    #    - url: /delete
+    #      permission: perms[user:delete]
+    - url: /**
+      permission: authc
+  filterChainDefinitionMap:
+    -/doRegist: anon
+    -/**: anon
+    -/logout: logout

@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="MavenProjectsManager">
-    <option name="originalFiles">
-      <list>
-        <option value="$PROJECT_DIR$/nacos-model/pom.xml" />
-        <option value="$PROJECT_DIR$/nacos-bill/pom.xml" />
-        <option value="$PROJECT_DIR$/nacos-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/nacos-user/pom.xml" />
-        <option value="$PROJECT_DIR$/nacos-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/nacos-seata-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/nacos-seata-bill/pom.xml" />
-        <option value="$PROJECT_DIR$/nacos-seata-user/pom.xml" />
-        <option value="$PROJECT_DIR$/seata/pom.xml" />
-        <option value="$PROJECT_DIR$/nacos-seata-consumer/pom.xml" />
-      </list>
-    </option>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="false" project-jdk-name="15" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="15" project-jdk-type="JavaSDK" />
 </project>
